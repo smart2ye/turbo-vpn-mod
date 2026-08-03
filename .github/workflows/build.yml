@@ -24,12 +24,25 @@ jobs:
           sudo apt update
           sudo apt install -y apktool
 
-      - name: Clean and build APK
+      - name: Clean problematic resource files
         run: |
-          # حذف public.xml إن وجد (لتجنب أخطاء الموارد)
-          rm -f res/values/public.xml || true
-          # محاولة التجميع
-          apktool b . -o app-unsigned.apk -f || apktool b . -o app-unsigned.apk --no-crunch
+          # 1. حذف كل ملفات $ من مجلدات drawable
+          find res/ -type f -name "*\$*.xml" -delete
+
+          # 2. حذف ids.xml (يحتوي على علامات <id> غير مسموحة)
+          rm -f res/values/ids.xml
+
+          # 3. حذف تعارض ic_launcher (نسخة الـ XML تتعارض مع PNG)
+          rm -f res/mipmap-anydpi-v26/ic_launcher.xml
+
+          # 4. حذف public.xml (إن وجد)
+          rm -f res/values/public.xml
+
+          echo "✅ تم تنظيف الموارد المزعجة"
+
+      - name: Build APK
+        run: |
+          apktool b . -o app-unsigned.apk -f
 
       - name: Sign APK
         run: |
