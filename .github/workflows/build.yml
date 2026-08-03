@@ -24,17 +24,27 @@ jobs:
           sudo apt update
           sudo apt install -y apktool
 
-      - name: Remove all problematic files in one go
+      - name: Remove all non-critical resource files
         run: |
           # 1. حذف جميع ملفات drawable التي تحتوي على $ في الاسم
           find res/drawable* -type f -name '*\$*.xml' -delete 2>/dev/null || true
-          # 2. حذف ملفات ic_launcher من mipmap
-          find res/mipmap* -type f -name 'ic_launcher*.xml' -delete 2>/dev/null || true
-          # 3. حذف ids.xml و public.xml
+          
+          # 2. حذف جميع ملفات drawable الخاصة بـ Zendesk (zui_, zs_) والرسوم المتحركة (avd_)
+          find res/drawable* -type f \( -name "zui_*" -o -name "zs_*" -o -name "avd_*" \) -delete 2>/dev/null || true
+          
+          # 3. حذف ملفات ic_launcher من mipmap
+          find res/mipmap* -type f -name "ic_launcher*.xml" -delete 2>/dev/null || true
+          
+          # 4. حذف ids.xml و public.xml
           rm -f res/values/ids.xml res/values/public.xml
-          # 4. حذف أي ملفات layout اختبارية
-          find res/layout -type f -name '*test*.xml' -delete 2>/dev/null || true
-          echo "✅ تم حذف جميع الموارد المخالفة"
+          
+          # 5. حذف مجلد menu بالكامل (يحتوي على قوائم غير ضرورية)
+          rm -rf res/menu
+          
+          # 6. حذف أي ملفات layout اختبارية أو تبدأ بـ zui_ أو zs_
+          find res/layout -type f \( -name "*test*.xml" -o -name "zui_*" -o -name "zs_*" \) -delete 2>/dev/null || true
+          
+          echo "✅ تم التنظيف الكامل للموارد غير الضرورية"
 
       - name: Build APK
         run: |
