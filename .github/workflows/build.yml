@@ -24,27 +24,30 @@ jobs:
           sudo apt update
           sudo apt install -y apktool
 
-      - name: Remove all non-critical resource files
+      - name: Remove all problematic files
         run: |
           # 1. حذف جميع ملفات drawable التي تحتوي على $ في الاسم
           find res/drawable* -type f -name '*\$*.xml' -delete 2>/dev/null || true
-          
-          # 2. حذف جميع ملفات drawable الخاصة بـ Zendesk (zui_, zs_) والرسوم المتحركة (avd_)
+
+          # 2. حذف الملفات التي تشير إلى موارد محذوفة (add_dns, always_on, design_password_eye)
+          find res/drawable* -type f \( -name "add_dns_*.xml" -o -name "always_on_*.xml" -o -name "design_password_eye.xml" \) -delete 2>/dev/null || true
+
+          # 3. حذف ملفات zui_, zs_, avd_ (خاصة بالدعم الفني والرسوم المتحركة)
           find res/drawable* -type f \( -name "zui_*" -o -name "zs_*" -o -name "avd_*" \) -delete 2>/dev/null || true
-          
-          # 3. حذف ملفات ic_launcher من mipmap
+
+          # 4. حذف ملفات ic_launcher من mipmap
           find res/mipmap* -type f -name "ic_launcher*.xml" -delete 2>/dev/null || true
-          
-          # 4. حذف ids.xml و public.xml
+
+          # 5. حذف ids.xml و public.xml
           rm -f res/values/ids.xml res/values/public.xml
-          
-          # 5. حذف مجلد menu بالكامل (يحتوي على قوائم غير ضرورية)
+
+          # 6. حذف مجلد menu بالكامل (غير ضروري ويسبب مراجع مفقودة)
           rm -rf res/menu
-          
-          # 6. حذف أي ملفات layout اختبارية أو تبدأ بـ zui_ أو zs_
+
+          # 7. حذف ملفات layout الاختبارية أو التي تبدأ بـ zui_, zs_
           find res/layout -type f \( -name "*test*.xml" -o -name "zui_*" -o -name "zs_*" \) -delete 2>/dev/null || true
-          
-          echo "✅ تم التنظيف الكامل للموارد غير الضرورية"
+
+          echo "✅ تم تنظيف جميع الملفات المخالفة"
 
       - name: Build APK
         run: |
