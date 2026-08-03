@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare1" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare2" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare3" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare4" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare5" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare6" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare7" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare8" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare9" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare10" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare11" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare12" />
+    <item android:duration="@integer/main_animation_frame_duration" android:drawable="@drawable/ic_hare13" />
+</animation-list>

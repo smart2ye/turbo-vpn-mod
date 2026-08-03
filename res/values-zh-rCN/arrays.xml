@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turbo正在寻找最优的极速服务器…</item>
+        <item>Turbo正在努力中…</item>
+        <item>出错了。请让我重新为你连接！</item>
+        <item>Turbo正在重新寻找最合适的服务器…</item>
+        <item>小兔子已经尽全力奔跑中…</item>
+    </string-array>
+</resources>

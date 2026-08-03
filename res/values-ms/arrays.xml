@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turbo mencari pelayan terpantas…</item>
+        <item>Arnab melakukan yang terbaik…</item>
+        <item>Ada yang tidak kena Biar saya cuba lagi!</item>
+        <item>Turbo sedang mencuba untuk mencari pelayan terbaik…</item>
+        <item>Arnab telah mencuba yang terbaik untuk berlari…</item>
+    </string-array>
+</resources>

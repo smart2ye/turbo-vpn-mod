@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="account_header_text">0.0sp</dimen>
+    <dimen name="base_btn_height">0.0dp</dimen>
+    <dimen name="connected_space_height_bias">0.012</dimen>
+    <dimen name="connected_space_top_iv_bias">0.34</dimen>
+    <dimen name="developed_guide_action_height">0.0dp</dimen>
+    <dimen name="developed_guide_action_text_size">0.0sp</dimen>
+    <dimen name="developed_guide_logo_title">0.0sp</dimen>
+    <dimen name="developed_guide_title">0.0sp</dimen>
+    <dimen name="developing_guide_title_size">0.0sp</dimen>
+    <dimen name="margin_gdpr_mask">0.0dp</dimen>
+    <dimen name="size_table_benefit">0.0sp</dimen>
+    <dimen name="size_table_iap_title">0.0sp</dimen>
+    <dimen name="sp_18">0.0sp</dimen>
+    <dimen name="table_iap_margin_top">0.0dp</dimen>
+    <dimen name="table_row_height">0.0dp</dimen>
+    <dimen name="title_table_iap">0.0sp</dimen>
+    <dimen name="vertical_padding_rate_card">0.0dp</dimen>
+    <dimen name="vip_page_description_text_size">0.0sp</dimen>
+    <dimen name="vpn_status_text_size">0.0sp</dimen>
+</resources>

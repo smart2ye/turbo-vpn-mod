@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>ਟਰਬੋ ਸਭ ਤੋਂ ਤੇਜ਼ ਸਰਵਰ ਲੱਭ ਰਿਹਾ ਹੈ..</item>
+        <item>ਖਰਗੋਸ਼ ਆਪਣੀ ਪੂਰੀ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ..</item>
+        <item>ਕੁਝ ਗਲਤ ਹੋ ਗਿਆ. ਮੈਨੂੰ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰਨ ਦਿਓ!</item>
+        <item>ਟਰਬੋ ਸਭ ਤੋਂ ਵਧੀਆ ਸਰਵਰ ਲੱਭਣ ਲਈ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰ ਰਿਹਾ ਹੈ.</item>
+        <item>ਖਰਗੋਸ਼ ਪਹਿਲਾਂ ਹੀ ਓਨੀ ਸਖ਼ਤੀ ਨਾਲ ਦੌੜ ਰਿਹਾ ਹੈ ਜਿੰਨਾ ਉਹ ਕਰ ਸਕਦਾ ਹੈ..</item>
+    </string-array>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turbo는 가장 빠른 서버를 찾고 있습니다</item>
+        <item>Rabbit 최선을 다하고 있습니다</item>
+        <item>문제가 발생했습니다. 다시 시도해 주세요!</item>
+        <item>Turbo는 최상의 서버를 찾기 위해 재시도 중입니다</item>
+        <item>rabbit 이미 최선을 다하여 열심히 달리고 있습니다</item>
+    </string-array>
+</resources>

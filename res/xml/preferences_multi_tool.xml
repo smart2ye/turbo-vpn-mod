@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory app:title="Base Info">
+        <Preference app:key="@string/key_push_token" app:summary="Click to copy to clipboard" app:title="Firebase Push token" />
+    </PreferenceCategory>
+    <PreferenceCategory app:title="Controller">
+        <SwitchPreferenceCompat app:key="@string/key_use_debug_config" app:summary="Use config with &quot;debug_&quot;prefix\nShould cold start APP again" app:title="Use debug config" />
+        <SwitchPreferenceCompat app:key="@string/key_allow_log" app:summary="Print logs to logcat" app:title="Allow logs" />
+        <SwitchPreferenceCompat app:key="@string/key_test_ad_app_id" app:summary="Use test ad appId or appKey" app:title="Use Test Ad AppKey" />
+    </PreferenceCategory>
+</PreferenceScreen>

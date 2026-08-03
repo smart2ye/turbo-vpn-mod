@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>တာဘို သည်အမြန်ဆုံး ဆာဗာ ကိုရှာဖွေသည်။</item>
+        <item>ယုန်ကအစွမ်းကုန်လုပ်နေတယ်</item>
+        <item>တစ်ခုခုမှားနေပြီ။ ငါ့ကိုထပ်ကြိုးစားခွင့်ပြုပါ။</item>
+        <item>တာဘို သည်အကောင်းဆုံး ဆာဗာ ကိုရှာဖွေရန်ကြိုးစားနေသည်။</item>
+        <item>ယုန်သည်သူတတ်နိုင်သလောက်အပြေးသန်နေပြီဖြစ်သည်။</item>
+    </string-array>
+</resources>

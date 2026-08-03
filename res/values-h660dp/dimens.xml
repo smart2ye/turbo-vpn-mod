@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="connect_img_m_125">0.0dp</dimen>
+    <dimen name="max_image_width_400">0.0dp</dimen>
+    <dimen name="reload_txt_m_12">0.0dp</dimen>
+    <dimen name="reload_txt_m_16">0.0dp</dimen>
+    <dimen name="splash_107">0.0dp</dimen>
+    <dimen name="splash_53">0.0dp</dimen>
+    <dimen name="tab_h_69">0.0dp</dimen>
+    <dimen name="text_size_20sp">0.0sp</dimen>
+    <dimen name="vertical_margin_15">0.0dp</dimen>
+    <dimen name="vertical_margin_16">0.0dp</dimen>
+    <dimen name="vertical_margin_17">0.0dp</dimen>
+    <dimen name="vip_btn_padding_20">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_10">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_12">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_20">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_30">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_60">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_70">0.0dp</dimen>
+    <dimen name="vip_vertical_margin_85">0.0dp</dimen>
+</resources>

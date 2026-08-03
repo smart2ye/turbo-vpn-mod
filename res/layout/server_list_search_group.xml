@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="0.0dp" />
+    <TextView android:textSize="0.0sp" android:textStyle="bold" android:textColor="#ff222222" android:id="@id/tv_title" android:background="@color/white" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="0.0dp" android:paddingEnd="0.0dp" />
+</FrameLayout>

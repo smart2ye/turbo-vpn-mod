@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="0.0dp" android:width="0.0dp" android:viewportWidth="0.0" android:viewportHeight="0.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#ffffff" android:pathData="M0.5,0.231h16v16h-16z" android:strokeAlpha="0.01" android:fillAlpha="0.01" />
+    <path android:fillColor="#00000000" android:pathData="M12.25,6.826C12.25,4.736 11.206,2.784 9.467,1.625L9.02,1.327C8.705,1.117 8.295,1.117 7.98,1.327L7.533,1.625C5.794,2.784 4.75,4.736 4.75,6.826" android:strokeColor="#ffffff" android:strokeWidth="1.60714" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+    <path android:fillColor="#ffffff" android:pathData="M8.5,7.231C9.092,7.231 9.571,6.751 9.571,6.159C9.571,5.568 9.092,5.088 8.5,5.088C7.908,5.088 7.429,5.568 7.429,6.159C7.429,6.751 7.908,7.231 8.5,7.231Z" android:strokeColor="#ffffff" android:strokeWidth="1.25" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+    <path android:fillColor="#00000000" android:pathData="M4.5,7.231L2.5,9.492V11.231H14.5V9.492L12.5,7.231" android:strokeColor="#ffffff" android:strokeWidth="1.60714" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+    <path android:fillColor="#00000000" android:pathData="M8.5,12.831V14.706" android:strokeColor="#ffffff" android:strokeWidth="1.25" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+    <path android:fillColor="#00000000" android:pathData="M6,13.456V14.081" android:strokeColor="#ffffff" android:strokeWidth="1.25" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+    <path android:fillColor="#00000000" android:pathData="M11,13.456V14.081" android:strokeColor="#ffffff" android:strokeWidth="1.25" android:strokeLineCap="round" android:strokeLineJoin="round" android:strokeAlpha="0.9" android:fillAlpha="0.9" />
+</vector>

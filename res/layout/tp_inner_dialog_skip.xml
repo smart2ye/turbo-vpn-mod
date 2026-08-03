@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="0.0dp" android:paddingTop="0.0dp" android:paddingRight="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@android:color/background_dark" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tp_close_video" />
+        <TextView android:id="@id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:text="@string/tp_lost_reward" />
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp">
+            <Button android:textColor="#3d82f7" android:id="@id/btn_closevideo" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tp_close_video1" />
+            <LinearLayout android:background="@drawable/tp_inner_bg_bottom_skip" android:padding="0.0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0.0dp">
+                <Button android:textColor="@android:color/white" android:id="@id/btn_keepplay" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="0.0dp" android:text="@string/tp_keep_play" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

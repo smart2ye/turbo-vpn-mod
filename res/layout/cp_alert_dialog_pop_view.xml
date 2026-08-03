@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="#80000000" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingHorizontal="0.0dp"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/cp_bg_apk_pop_white" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingHorizontal="0.0dp">
+        <RelativeLayout android:orientation="horizontal" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="0.0dp">
+            <Button android:id="@id/btn_cancel" android:background="@drawable/cp_download_confirm_close" android:layout_width="0.0dp" android:layout_height="0.0dp" />
+            <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下载" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.0px" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="0.0dp" android:paddingRight="0.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:layout_marginBottom="0.0dp">
+                <TextView android:textSize="0.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dp" android:text="立即下载" android:lines="1" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="0.0dp">
+                <Button android:textSize="0.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/btn_close" android:background="@drawable/cp_bg_bottom_cancel_confirm_btn" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_marginRight="0.0dp" android:text="取消" android:lines="1" android:layout_weight="0.0" />
+                <Button android:textSize="0.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/btn_download" android:background="@drawable/cp_bg_bottom_download_confirm_btn" android:paddingTop="0.0dp" android:paddingBottom="0.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:text="确定" android:lines="1" android:layout_weight="0.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

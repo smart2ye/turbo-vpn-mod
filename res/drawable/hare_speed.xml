@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="55" android:drawable="@drawable/ic_hare1" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare2_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare3_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare4_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare5_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare6_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare7_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare8_s" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare9" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare10" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare11" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare12" />
+    <item android:duration="55" android:drawable="@drawable/ic_hare13" />
+</animation-list>

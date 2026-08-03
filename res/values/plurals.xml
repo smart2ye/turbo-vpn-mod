@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hosts_summary">
+        <item quantity="one">1 hostname configured</item>
+        <item quantity="other">%d hostnames configured</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="removed">
+        <item quantity="one">Removed</item>
+        <item quantity="other">%d items removed</item>
+    </plurals>
+</resources>

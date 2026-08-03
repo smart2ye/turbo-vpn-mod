@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>توربو در جستجوی پرسرعت ترین سرور است…</item>
+        <item>خرگوش حداکثر تلاش خود را میکند…</item>
+        <item>مشکل پیش آمده، اجازه دهید دوباره تلاش کنیم!</item>
+        <item>توربو در حال جستجوی مجدد است برای دریافت بهترین سرور…</item>
+        <item>خرگوش تا آخرین حد توان خود در حال دویدن است…</item>
+    </string-array>
+</resources>

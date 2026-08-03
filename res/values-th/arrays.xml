@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turbo กำลังค้นหาเซิร์ฟเวอร์ที่เร็วที่สุด…</item>
+        <item>แรบบิททำดีที่สุดแล้ว…</item>
+        <item>บางอย่างผิดพลาด ลองอีกครั้ง</item>
+        <item>Turbo กำลังพยายามค้นหาเซิร์ฟเวอร์ที่ดีที่สุด…</item>
+        <item>แรบบิทวิ่งอย่างสุดกำลังแล้ว…</item>
+    </string-array>
+</resources>

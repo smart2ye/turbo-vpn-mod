@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@id/menuAd" android:visible="false" android:title="" app:actionLayout="@layout/layout_menu_ad" app:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_home_website" android:id="@id/menuFilter" android:visible="false" android:title="" app:showAsAction="always" />
+    <item android:icon="@drawable/menu_server" android:id="@id/menuFlag" android:title="" app:showAsAction="always" />
+    <item android:icon="@drawable/ic_vip" android:id="@id/menu_vip" android:title="" app:showAsAction="always" />
+</menu>

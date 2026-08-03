@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turboは最も高速なサーバーを探し中です…</item>
+        <item>ウサギは全力を尽くしています…</item>
+        <item>何かトラブルが発生しています。もう一度トライさせてください。</item>
+        <item>Turboは最も高速なサーバーを探し直しています…</item>
+        <item>ウサギは全力で走っています…</item>
+    </string-array>
+</resources>

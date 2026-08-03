@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/zui_color_surface_disabled" />
+        </shape>
+    </item>
+    <item android:left="-0.0dp" android:right="-0.0dp" android:bottom="-0.0dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <stroke android:width="0.0dp" android:color="@color/zui_color_black_12" />
+        </shape>
+    </item>
+</layer-list>

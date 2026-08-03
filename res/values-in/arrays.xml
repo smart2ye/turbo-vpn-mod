@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turbo sedang mencari server tercepat</item>
+        <item>Kelinci melakukan yang terbaik</item>
+        <item>Ada yang salah. Akan saya coba lagi!</item>
+        <item>Turbo mencoba kembali mencari server terbaik</item>
+        <item>Kelinci telah berlari sebisa mungkin</item>
+    </string-array>
+</resources>

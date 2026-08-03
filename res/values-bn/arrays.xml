@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>টার্বো দ্রুততম সার্ভারটি সন্ধান করছে…</item>
+        <item>ভালো করছে…</item>
+        <item>কিছু ভুল হয়েছে।আবার চেষ্টা করতে দিন!</item>
+        <item>টার্বো সেরা সার্ভারটি খুঁজতে আবার চেষ্টা করছে…</item>
+        <item>ইতোমধ্যে কঠোর ভাবে চলছে…</item>
+    </string-array>
+</resources>

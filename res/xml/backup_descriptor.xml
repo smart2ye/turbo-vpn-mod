@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <include domain="database" path="profile.db" />
+    <include domain="database" path="config.db" />
+    <include domain="device_database" path="config.db" />
+</full-backup-content>

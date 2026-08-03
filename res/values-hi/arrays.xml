@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>टर्बो सबसे तेज सर्वर ढूंढ रहा है…</item>
+        <item>खरगोश अपना सर्वश्रेष्ठ कर रहा है...</item>
+        <item>कुछ गलत हो गया। मुझे दोबारा प्रयास करने दें!</item>
+        <item>टर्बो सर्वश्रेष्ठ सर्वर खोजने के लिए पुनः प्रयास कर रहा है…</item>
+        <item>खरगोश पहले से ही उतनी ही मेहनत कर रहा है जितना वह कर सकता है…</item>
+    </string-array>
+</resources>

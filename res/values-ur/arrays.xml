@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>ٹربو کو تیز ترین سرور مل رہا ہے</item>
+        <item>ریبیٹ اپنی پوری کوشش کر رہا ہے</item>
+        <item>کچھ غلط ہو گیا. مجھے دوبارہ کوشش کرنے دیں!</item>
+        <item>ٹربو بہترین سرور تلاش کرنے کے لئے دوبارہ کوشش کر رہا ہے</item>
+        <item>ریبیٹ پہلے ہی اتنی ہی محنت سے چل رہا ہے جتنا وہ کرسکتا ہے</item>
+    </string-array>
+</resources>

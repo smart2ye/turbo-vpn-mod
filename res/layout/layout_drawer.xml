@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView android:layout_gravity="start" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:overScrollMode="never" android:layout_marginEnd="@dimen/base_btn_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_drawer_root" android:background="@android:color/white" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@id/bg_drawer_header" android:background="@drawable/bg_gradient_orange" android:layout_width="match_parent" android:layout_height="0.0dp" app:layout_constraintTop_toTopOf="parent">
+            <ViewStub android:layout_gravity="center" android:id="@id/stub_header_not_sign" android:layout="@layout/layout_account_page_header" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ViewStub android:layout_gravity="center" android:id="@id/stub_header_signed" android:layout="@layout/layout_account_page_header_signed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewVip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_12" app:menuIcon="@drawable/ic_setting_vip" app:menuTitle="@string/vip_text_premium_plan" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewAccount" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_account" app:menuTitle="@string/my_account" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewServerList" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_server_list" app:menuTitle="@string/server_location" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewBypassVpn" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_setting_bypass" app:menuTitle="@string/apps_using_vpn" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewWebFilter" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_website_filter" app:menuTitle="@string/website_filter" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewSpeedTest" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_speed" app:menuTitle="@string/speed_test2" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textview_desktop" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_desktop" app:menuTitle="@string/desktop" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewSetting" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_setting" app:menuTitle="@string/settings_title" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewHelpSupport" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_help_support" app:menuTitle="@string/help_support" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewRating" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_setting_ratings" app:menuTitle="@string/settings_ratings" />
+        <free.vpn.unblock.proxy.turbovpn.views.NavMenuItem android:id="@id/textViewAboutUs" android:layout_width="match_parent" android:layout_height="wrap_content" app:menuIcon="@drawable/ic_about_us" app:menuTitle="@string/settings_about_only" />
+        <View android:id="@id/nav_footer_1" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" />
+        <View android:id="@id/nav_footer_2" android:focusable="false" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/dp_48" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

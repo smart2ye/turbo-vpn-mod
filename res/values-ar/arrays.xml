@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>يقوم Turbo بإيجاد أسرع خادم…</item>
+        <item>الأرنب يبذل قصارى جهده…</item>
+        <item>هناك خطأ ما. دعني أحاول مجددا!</item>
+        <item>يعيد Turbo المحاولة للعثور على أفضل خادم…</item>
+        <item>الأرنب يجري بالفعل بأقصى ما يستطيع…</item>
+    </string-array>
+</resources>

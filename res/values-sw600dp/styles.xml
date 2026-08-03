@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ServerListTabTextAppearance" parent="@style/TextAppearance.Design.Tab">
+        <item name="android:textSize">0.0sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+    <style name="Widget.Design.TabLayout" parent="@style/Base.Widget.Design.TabLayout">
+        <item name="tabGravity">center</item>
+        <item name="tabMode">fixed</item>
+    </style>
+</resources>

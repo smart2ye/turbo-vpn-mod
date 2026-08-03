@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_combined_tab" android:layout_width="@dimen/dp_24" android:layout_height="@dimen/dp_24" android:src="@drawable/logo" android:scaleType="fitXY" />
+    <TextView android:textSize="@dimen/account_action_tips_text" android:ellipsize="end" android:gravity="center" android:id="@id/tv_combined_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_4" android:lines="1" />
+</LinearLayout>

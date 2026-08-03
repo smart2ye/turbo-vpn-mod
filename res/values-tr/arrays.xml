@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="find_fast_server">
+        <item>Turbo en hızlı sunucuyu aramakta.</item>
+        <item>Tavşan elinden geleni yapıyor.</item>
+        <item>Bir hata oluştu. Tekrar deneyeyim!</item>
+        <item>Turbo tekrar en iyi sunucuyu aramaya çalışıyor.</item>
+        <item>Tavşan zaten elinden geldiği kadar hızlı koşuyor.</item>
+    </string-array>
+</resources>

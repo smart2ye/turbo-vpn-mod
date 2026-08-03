@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/imageViewApp" android:layout_width="0.0dp" android:layout_height="0.0dp" android:scaleType="fitXY" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="0.0sp" android:textColor="@color/color_222222" android:id="@id/textViewApp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:paddingEnd="0.0dp" android:layout_marginStart="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toEndOf="@id/imageViewApp" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.appcompat.widget.SwitchCompat android:id="@id/switchCompatApp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0.0dp" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" app:theme="@style/Color1SwitchStyle" />
+    <View android:id="@id/view_line_bottom" android:background="@color/color_80dadada" android:layout_width="0.0dp" android:layout_height="0.5dp" android:layout_marginTop="0.0dp" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="@id/textViewApp" app:layout_constraintTop_toBottomOf="@id/imageViewApp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

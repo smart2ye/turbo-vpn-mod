@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="max_image_width_400">0.0dp</dimen>
+    <dimen name="splash_107">0.0dp</dimen>
+    <dimen name="splash_53">0.0dp</dimen>
+</resources>
