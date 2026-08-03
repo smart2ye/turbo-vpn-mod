@@ -1,0 +1,56 @@
+{
+  "general": [
+    {
+      "Q": "Mengapa saya perlu VPN?",
+      "A": "VPN adalah jaringan pribadi virtual. Ini memungkinkan Anda untuk tetap pribadi, tetap aman, dan mengakses konten online apa pun yang Anda inginkan — di mana pun Anda berada."
+    },
+    {
+      "Q": "Apakah aman?",
+      "A": "Kami menggunakan SSL untuk mengenkripsi data internet Anda. Data Anda tidak dapat dipahami oleh mata-mata yang mengintai saat dalam perjalanan. Selain itu, kami tidak mengumpulkan, mencatat, menyimpan, membagikan log data apa pun milik pengguna, merasa aman untuk menggunakan produk kami."
+    },
+    {
+      "Q": "Cara menggunakan Turbo VPN?",
+      "A": "Klik tombol simbol \"Wortel\" di tempat tengah halaman beranda. Kemudian, silakan \"Percayai aplikasi ini\" jika perangkat Anda meminta izin."
+    },
+    {
+      "Q": "Bagaimana cara memutuskan Turbo VPN?",
+      "A": "Klik tombol hubungkan yang sama di halaman beranda untuk memutuskan sambungan VPN."
+    },
+    {
+      "Q": "Tidak memiliki otoritas / Tidak dapat menekan OK untuk mengakses situs web / aplikasi?",
+      "A": "To avoid this problem, please close all apps that may be running in the background and open our app again.If it still does not work for you, please contact us via turboappfeedback@gmail.com."
+    },
+    {
+      "Q": "Tidak dapat terhubung, tidak stabil atau kecepatan lambat.",
+      "A": "Masalah koneksi dipengaruhi oleh banyak faktor, harap perbarui ke versi terbaru, segarkan daftar server dan hubungkan ke server teratas untuk kali serval.Jika masih tidak berhasil untuk Anda, silakan hubungi kami melalui turboappfeedback@gmail.com dan berikan kami dengan negara dan nama penyedia jaringan Anda."
+    },
+    {
+      "Q": "Bagaimana cara mengganti lokasi server?",
+      "A": "Pilih lokasi yang Anda inginkan dalam daftar server, kemudian VPN akan terhubung ke lokasi yang Anda klik (tetapi kami menyarankan Anda untuk terhubung dengan server teratas)."
+    },
+    {
+      "Q": "Tidak dapat menemukan server yang Anda inginkan?",
+      "A": "Silakan hubungi dan berikan kami alamat situs web detail yang ingin Anda batalkan buka melalui turboappfeedback@gmail.com. Kami akan mengumpulkan umpan balik Anda dan meningkatkan produk kami."
+    },
+    {
+      "Q": "Bagaimana cara mendapatkan versi multibahasa dari aplikasi ini?",
+      "A": "Silakan hubungi kami melalui turboappfeedback@gmail.com. Kami akan mengumpulkan umpan balik Anda dan meningkatkan produk kami."
+    },
+    {
+      "Q": "Bagaimana cara mendapatkan lebih banyak data tanpa batas?",
+      "A": "Kami menyediakan uji coba gratis 7 hari, Anda dapat menikmati server optimal dan spesifik (seperti Netflix) dan layanan no-AD. Tanpa menghiraukan, Anda bebas membatalkan langganan kapan saja dalam periode uji coba agar tidak dikenakan biaya."
+    },
+    {
+      "Q": "Bagaimana cara membatalkan langganan di Google play?",
+      "A": "Langganan di Google Play diperbarui secara otomatis kecuali jika Anda berhenti berlangganan, jika Anda ingin berhenti berlangganan, buka Google Play Store, ketuk Menu-Langganan-Ketuk langganan yang ingin Anda batalkan-Ketuk Batalkan langganan. Periksa detailnya di sini: https://support.google.com/googleplay/answer/2476088"
+    },
+    {
+      "Q": "Bisakah saya mendapatkan pengembalian uang?",
+      "A": "Tidak membatalkan langganan Anda sebelum masa percobaan berakhir tidak akan dikembalikan.Periksa detailnya di sini: https: //support.google.com/googleplay/answer/2476088"
+    },
+    {
+      "Q": "Tidak dapat menggunakan P2P atau bittorrent?,",
+      "A": "Harap jangan gunakan bittorrent dengan VPN atau akun akan diblokir."
+    }
+  ]
+}

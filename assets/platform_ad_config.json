@@ -1,0 +1,288 @@
+{
+  "enable_google_cmp": true,
+  "placements": {
+    "splash": {
+      "ads": [
+        [
+          "open_admob_2"
+        ],
+        [
+          "open_vungle_w_3.0"
+        ],
+        [
+          "full_admob_10001"
+        ],
+        [
+          "open_bigo_1"
+        ],
+        [
+          "open_admob_1"
+        ],
+        [
+          "open_admob_3"
+        ],
+        [
+          "native_full_admob_1"
+        ],
+        [
+          "open_admob_1111"
+        ],
+        [
+          "native_full_bigo_1"
+        ]
+      ]
+    },
+    "connected": {
+      "ads": [
+        [
+          "full_bigo_1"
+        ],
+        [
+          "full_bigo_2"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_admob_1000"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_vungle_2_1.0"
+        ],
+        [
+          "full_is_1"
+        ],
+        [
+          "full_inmobi_5"
+        ],
+        [
+          "full_vungle_3_0.25"
+        ],
+        [
+          "full_yandex_6"
+        ],
+        [
+          "full_home_1"
+        ]
+      ]
+    },
+    "return_app": {
+      "ads": [
+        [
+          "full_bigo_1"
+        ],
+        [
+          "full_bigo_2"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_admob_1000"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_vungle_2_1.0"
+        ],
+        [
+          "native_full_admob_2"
+        ],
+        [
+          "full_is_1"
+        ],
+        [
+          "full_inmobi_5"
+        ],
+        [
+          "full_vungle_3_0.25"
+        ],
+        [
+          "full_yandex_6"
+        ]
+      ]
+    },
+    "disconnected": {
+      "ads": [
+        [
+          "full_bigo_1"
+        ],
+        [
+          "full_bigo_2"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_admob_1000"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_vungle_2_1.0"
+        ],
+        [
+          "full_is_1"
+        ],
+        [
+          "full_inmobi_5"
+        ],
+        [
+          "full_vungle_3_0.25"
+        ],
+        [
+          "full_yandex_6"
+        ],
+        [
+          "full_home_1"
+        ]
+      ]
+    },
+    "go_out_server_list": {
+      "ads": [
+        [
+          "full_bigo_1"
+        ],
+        [
+          "full_bigo_2"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_admob_1000"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_vungle_2_1.0"
+        ],
+        [
+          "full_is_1"
+        ],
+        [
+          "full_inmobi_5"
+        ],
+        [
+          "full_vungle_3_0.25"
+        ],
+        [
+          "full_yandex_6"
+        ]
+      ]
+    }
+  },
+  "timings": {
+    "connected": {
+      "show": {
+        "placement": "connected"
+      }
+    },
+    "return_app": {
+      "show": {
+        "placement": "return_app"
+      }
+    },
+    "splash": {
+      "show": {
+        "placement": "splash"
+      }
+    },
+    "go_out_server_list": {
+      "show": {
+        "placement": "go_out_server_list"
+      }
+    },
+    "disconnected": {
+      "show": {
+        "placement": "disconnected"
+      }
+    },
+    "app_launch": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": [],
+              "splash": []
+            }
+          }
+        ]
+      }
+    },
+    "back_to_foreground": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": [],
+              "return_app": []
+            }
+          }
+        ]
+      }
+    },
+    "vpn_pre_connected": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": []
+            }
+          }
+        ]
+      }
+    },
+    "vpn_connected": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": []
+            }
+          }
+        ]
+      }
+    },
+    "go_to_background": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "return_app": []
+            }
+          }
+        ]
+      }
+    },
+    "vpn_timer_task": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "return_app": []
+            }
+          }
+        ]
+      }
+    }
+  }
+}

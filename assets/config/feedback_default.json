@@ -1,0 +1,40 @@
+{
+  "feedback_questions": [
+    {
+      "category": "Can't connect",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "Connected, but can't access sites/apps",
+      "description": "",
+      "tips": "List sites/apps",
+      "priority": 1
+    },
+    {
+      "category": "Speed is too slow",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "Auto-disconnected",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "Servers are full/sleepy",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "Others",
+      "description": "",
+      "tips": "What's it?",
+      "priority": 1
+    }
+  ]
+}

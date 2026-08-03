@@ -1,0 +1,59 @@
+.class Lzendesk/answerbot/TimerModule;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method provideHandler()Landroid/os/Handler;
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/os/Handler;
+
+    .line 2
+    .line 3
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v1
+
+    .line 7
+    invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    .line 8
+    .line 9
+    .line 10
+    return-object v0
+.end method
+
+.method timerFactory(Landroid/os/Handler;)LE5/f$b;
+    .locals 1
+
+    .line 1
+    new-instance v0, LE5/f$b;
+
+    .line 2
+    .line 3
+    invoke-direct {v0, p1}, LE5/f$b;-><init>(Landroid/os/Handler;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-object v0
+.end method

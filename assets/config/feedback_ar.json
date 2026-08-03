@@ -1,0 +1,40 @@
+{
+  "feedback_questions": [
+    {
+      "category": "لا يمكنني الإتصال",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "تم الإتصال بنجاح ولكن لا يمكنني فتح مواقع أو تطبيقات",
+      "description": "",
+      "tips": "برجاء تسجيل لائحة المواقع أو التطبيقات التي لا تستطيع فتحها",
+      "priority": 1
+    },
+    {
+      "category": "السرعة بطيئة جدا",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "يقوم بقطع الإتصال تلقائيا",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "الخوادم ممتلئه أو نائمة",
+      "description": "",
+      "tips": "",
+      "priority": 1
+    },
+    {
+      "category": "آخر",
+      "description": "",
+      "tips": "What's it?",
+      "priority": 1
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+.class public final Lcom/unity3d/ads/core/data/repository/FocusRepository$special$$inlined$filter$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lkotlinx/coroutines/flow/c;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/unity3d/ads/core/data/repository/FocusRepository;-><init>(Lcom/unity3d/ads/core/domain/AndroidGetLifecycleFlow;Lkotlinx/coroutines/CoroutineDispatcher;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lkotlinx/coroutines/flow/c;"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_unsafeTransform$inlined:Lkotlinx/coroutines/flow/c;
+
+
+# direct methods
+.method public constructor <init>(Lkotlinx/coroutines/flow/c;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/unity3d/ads/core/data/repository/FocusRepository$special$$inlined$filter$1;->$this_unsafeTransform$inlined:Lkotlinx/coroutines/flow/c;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public collect(Lkotlinx/coroutines/flow/d;Lf5/c;)Ljava/lang/Object;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lcom/unity3d/ads/core/data/repository/FocusRepository$special$$inlined$filter$1;->$this_unsafeTransform$inlined:Lkotlinx/coroutines/flow/c;
+
+    .line 2
+    .line 3
+    new-instance v1, Lcom/unity3d/ads/core/data/repository/FocusRepository$special$$inlined$filter$1$2;
+
+    .line 4
+    .line 5
+    invoke-direct {v1, p1}, Lcom/unity3d/ads/core/data/repository/FocusRepository$special$$inlined$filter$1$2;-><init>(Lkotlinx/coroutines/flow/d;)V
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-interface {v0, v1, p2}, Lkotlinx/coroutines/flow/c;->collect(Lkotlinx/coroutines/flow/d;Lf5/c;)Ljava/lang/Object;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    invoke-static {}, Lkotlin/coroutines/intrinsics/a;->f()Ljava/lang/Object;
+
+    .line 13
+    .line 14
+    .line 15
+    move-result-object p2
+
+    .line 16
+    if-ne p1, p2, :cond_0
+
+    .line 17
+    .line 18
+    return-object p1
+
+    .line 19
+    :cond_0
+    sget-object p1, LZ4/r;->a:LZ4/r;
+
+    .line 20
+    .line 21
+    return-object p1
+.end method

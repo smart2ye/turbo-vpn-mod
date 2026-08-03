@@ -1,0 +1,396 @@
+{
+  "config0": {
+    "template": 0,
+    "close_btn": {
+      "pos": 1,
+      "delay_show": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m",
+        "price": "$59.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "equally_price": "$4.99",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "tag": "save 58%"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config0_1": {
+    "template": 0,
+    "close_btn": {
+      "pos": 1,
+      "delay_show": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m",
+        "price": "$59.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "equally_price": "$4.99",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "tag": "save 58%"
+      }
+    ]
+  },
+  "config0_2": {
+    "template": 0,
+    "close_btn": {
+      "pos": 1,
+      "delay_show": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.c.1m",
+        "price": "$13.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.12m",
+        "price": "$69.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "equally_price": "$5.83",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "tag": "save 58%"
+      }
+    ]
+  },
+  "config1": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config1_1": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "close_btn": {
+      "pos": 0,
+      "shield_back_press": true
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config1_2": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "description": "Only %s billed yearly after 7 days free trial",
+    "close_btn": {
+      "pos": 0,
+      "shield_back_press": true
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.12m.try7d",
+        "price": "$59.99",
+        "description": "year",
+        "subs_period": "P1Y"
+      }
+    ]
+  },
+  "config1_3": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "close_btn": {
+      "pos": 1,
+      "shield_back_press": true
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config1_4": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "close_btn": {
+      "pos": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config1_5": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "description": "Only %s billed monthly",
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ],
+    "purchase_btn_text": "START NOW"
+  },
+  "config3": {
+    "template": 3,
+    "close_btn": {
+      "pos": 1,
+      "shield_back_press": true
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config4": {
+    "template": 4,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ]
+  },
+  "config5": {
+    "template": 5,
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.12m.off75",
+        "equally_price": "$3.00",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "price": "$35.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "original_price": "$11.99",
+        "tag": "75% OFF",
+        "off_percentage": "75%",
+        "off_refer_sku": "v2.turbo.a.sub.b.1m"
+      }
+    ],
+    "purchase_btn_text": "START NOW"
+  },
+  "config5_1": {
+    "template": 5,
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "sub_1_month_id",
+        "price": "$4.99",
+        "description": "month",
+        "subs_period": "P1M",
+        "original_price": "$11.99",
+        "tag": "58% OFF",
+        "off_percentage": "58%",
+        "off_refer_sku": "v2.turbo.a.sub.b.1m"
+      }
+    ],
+    "purchase_btn_text": "START NOW"
+  },
+  "config5_2": {
+    "template": 5,
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.12m.off75",
+        "price": "$35.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "original_price": "$59.99",
+        "tag": "40% OFF",
+        "off_percentage": "40%",
+        "off_refer_sku": "v2.turbo.a.sub.b.12m"
+      }
+    ],
+    "purchase_btn_text": "START NOW"
+  },
+  "config8": {
+    "template": 8,
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.c.1m",
+        "price": "$13.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.12m",
+        "price": "$69.99",
+        "description": "year",
+        "subs_period": "P1Y"
+      }
+    ],
+    "purchase_btn_text": "UPGRADE NOW",
+    "target_level": 30,
+    "max_bind_count": 20
+  },
+  "config9": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d"
+      },
+      {
+        "id": "sub_1_month_id"
+      },
+      {
+        "id": "v2.turbo.a.sub.a.1m"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.1m"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m.off75"
+      },
+      {
+        "id": "v2.turbo.a.sub.a.12m"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.12m"
+      },
+      {
+        "id": "v2.turbo.a.sub.a.7d"
+      }
+    ]
+  },
+  "config9_1": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m.off75"
+      },
+      {
+        "id": "sub_1_month_id"
+      }
+    ]
+  },
+  "config9_2": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.12m.off75"
+      }
+    ]
+  },
+  "config9_3": {
+    "template": 9,
+    "products": [
+      {
+        "id": "sub_1_month_id"
+      }
+    ]
+  },
+  "config9_4": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m"
+      }
+    ]
+  },
+  "config9_5": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.c.12m"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.1m"
+      }
+    ]
+  },
+  "config10": {
+    "template": 10,
+    "close_btn": {
+      "pos": 2
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.a.12m",
+        "price": "$29.99",
+        "original_price": "$143.88",
+        "subs_period": "P1Y",
+        "tag": "79%",
+        "desc1": "this plan only covers a single device"
+      }
+    ]
+  }
+}

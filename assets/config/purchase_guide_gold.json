@@ -1,0 +1,386 @@
+{
+  "level": 20,
+  "max_bind_count": 10,
+  "condition": [
+    {
+      "name": "BS_LC_0419_DE",
+      "country_codes": "DE,KR,PH",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_de=100%"
+    },
+    {
+      "name": "BS_LC_0419_US",
+      "country_codes": "US,GB,JP,FR,ES,OM,QA,CA,NL,IT,TW,BE,SE,CH,AT,TR,MY",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_year=100%"
+    },
+    {
+      "name": "BS_0419_SA",
+      "country_codes": "SA",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_sa=100%"
+    },
+    {
+      "name": "PR_0419_MX",
+      "country_codes": "MX,TZ,KW",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_mx=100%"
+    },
+    {
+      "name": "LC_0419_ID",
+      "country_codes": "ID,UA,BR,AE",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_id=100%"
+    },
+    {
+      "name": "dflt_IN_0419",
+      "country_codes": "IN",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_in=100%"
+    },
+    {
+      "name": "or_LC_0419",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan=100%"
+    },
+    {
+      "name": "non_0419",
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_year=100%"
+    },
+    {
+      "name": "or_up_0419_in",
+      "country_codes": "IN,CN",
+      "upgrade": true,
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_non_upgrade=100%"
+    },
+    {
+      "name": "non_up_0419_in",
+      "country_codes": "IN,CN",
+      "upgrade": true,
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_non_upgrade=100%"
+    },
+    {
+      "name": "or_can_0419_in",
+      "country_codes": "IN,CN",
+      "cancelled": true,
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_non_cancel=100%"
+    },
+    {
+      "name": "non_can_0419_in",
+      "country_codes": "IN,CN",
+      "cancelled": true,
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_non_cancel=100%"
+    },
+    {
+      "name": "or_up_0419",
+      "upgrade": true,
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_gold_upgrade=100%"
+    },
+    {
+      "name": "non_up_0419",
+      "upgrade": true,
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_gold_upgrade=100%"
+    },
+    {
+      "name": "or_can_0419",
+      "cancelled": true,
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_gold_cancel=100%"
+    },
+    {
+      "name": "non_can_0419",
+      "cancelled": true,
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_gold_cancel=100%"
+    }
+  ],
+  "plan": {
+    "dflt_plan_de": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1_1",
+          "total_count": 2,
+          "interval_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_plan_sa": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1_3",
+          "total_count": 2,
+          "interval_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_plan_mx": {
+      "splash": [
+        {
+          "template": 4,
+          "config": "config4",
+          "total_count": 2,
+          "interval_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_plan_id": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1_4",
+          "total_count": 2,
+          "interval_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_plan_in": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1_5",
+          "total_count": 2,
+          "interval_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0_1",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0_1",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_plan": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1",
+          "total_count": 2,
+          "interval_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_plan_year": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1_2",
+          "total_count": 1
+        }
+      ],
+      "connected": [
+        {
+          "template": 0,
+          "config": "config0",
+          "total_count": 3,
+          "interval_count": 1
+        }
+      ],
+      "pay_cancel": [
+        {
+          "template": 5,
+          "config": "config5_2",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0",
+          "is_default": true
+        }
+      ]
+    },
+    "dflt_non_upgrade": {},
+    "dflt_non_cancel": {},
+    "dflt_gold_upgrade": {
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0_1",
+          "is_default": true
+        }
+      ],
+      "device_maximum": [
+        {
+          "template": 9,
+          "config": "config9_4",
+          "total_count": -1
+        }
+      ],
+      "unbind": [
+        {
+          "template": 9,
+          "config": "config9_4",
+          "total_count": -1
+        }
+      ]
+    },
+    "dflt_gold_cancel": {
+      "splash": [
+        {
+          "template": 1,
+          "config": "config1",
+          "total_count": 1
+        }
+      ],
+      "menu": [
+        {
+          "template": 9,
+          "config": "config9_1",
+          "is_default": true
+        }
+      ]
+    }
+  }
+}

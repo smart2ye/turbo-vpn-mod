@@ -1,0 +1,56 @@
+{
+  "general": [
+    {
+      "Q": "Why I need a VPN?",
+      "A": "VPN is virtual private network. It allows you to stay private,stay secure,and access any online content you want—no matter where you are."
+    },
+    {
+      "Q": "Is it safe? ",
+      "A": "We use SSL to encrypt your internet data. Your data is undecipherable to prying eyes while in transit. Moreover, we do not collect, log, store, share any data log belonging to users,please feel safe to use our product."
+    },
+    {
+      "Q": "How to use Turbo VPN?",
+      "A": "Click the \"Carrot\" symbol button on the middle place of the home page. Then please “Trust this application”if your device asks for permission."
+    },
+    {
+      "Q": "How to disconnect Turbo VPN?",
+      "A": "Click the same connect button on the home page to disconnect VPN."
+    },
+    {
+      "Q": "Don't have authority / Can’t press OK to access websites/apps?",
+      "A": "To avoid this problem, please close all apps that may be running in the background and open our app again.If it still does not work for you, please contact us via turboappfeedback@gmail.com."
+    },
+    {
+      "Q": "Can’t connect, not stable or speed is slow. ",
+      "A": "Connection problem is affected by many factors,please update to the latest version,refresh the server list and connect to the top server for serval times.If it still does not work for you, please contact us via turboappfeedback@gmail.com and provide us with your country and network provider name."
+    },
+    {
+      "Q": "How to switch server location? ",
+      "A": "Choose the location you want in the server list, then VPN will connect to the location you click(but we recommend you to connect with top server)."
+    },
+    {
+      "Q": "Can’t find the server you want?",
+      "A": "Please contact and provide us the detail website address that you want to unblock via turboappfeedback@gmail.com. We will collect your feedback and improve our product."
+    },
+    {
+      "Q": "How to get multilingual version of this app?",
+      "A": "Please contact us via turboappfeedback@gmail.com. We will collect your feedback and improve our product."
+    },
+    {
+      "Q": "How to get more unlimited data? ",
+      "A": "We provide 7-day free trial,you can enjoy optimal and specific (such as Netflix) server and no-ADs service.Regardless, you are free to cancel your subscription anytime within the trial period in order not to be charged."
+    },
+    {
+      "Q": "How to cancel the subscription in Google play?",
+      "A": "Subscriptions on Google Play renew automatically unless you unsubscribe,if you want to unsubscribe,please open Google Play Store,tap Menu-Subscriptions-Tap the subscription you want to cancel-Tap Cancel subscription. Check the details here:https://support.google.com/googleplay/answer/2476088"
+    },
+    {
+      "Q": "Can I get refund?",
+      "A": "Not cancelling your subscription before the trial period ends will not be refunded. Check the details here:https://support.google.com/googleplay/answer/2476088 "
+    },
+    {
+      "Q": "Can't use P2P or bit torrent?",
+      "A": "Please don't use bit torrent with VPN or it will get account blocked."
+    }
+  ]
+}

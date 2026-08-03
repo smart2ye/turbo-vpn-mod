@@ -1,0 +1,31 @@
+.class public final Lcom/yandex/mobile/ads/impl/ci1$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yandex/mobile/ads/impl/ci1;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "a"
+.end annotation
+
+
+# direct methods
+.method public static a()Lcom/yandex/mobile/ads/impl/ci1;
+    .locals 1
+
+    .line 1
+    invoke-static {}, Lcom/yandex/mobile/ads/impl/ci1;->a()Lcom/yandex/mobile/ads/impl/ci1;
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-object v0
+
+    .line 5
+    return-object v0
+.end method

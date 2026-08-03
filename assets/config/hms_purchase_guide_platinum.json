@@ -1,0 +1,104 @@
+{
+  "level": 30,
+  "max_bind_count": 20,
+  "condition": [
+    {
+      "name": "HMS_plt_0720",
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan=100%"
+    },
+    {
+      "name": "HMS_non_plt_0720",
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan=100%"
+    },
+    {
+      "name": "HMS_or_up_plt_0720",
+      "upgrade": true,
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_upgrade=100%"
+    },
+    {
+      "name": "HMS_non_up_plt_0720",
+      "upgrade": true,
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_upgrade=100%"
+    },
+    {
+      "name": "HMS_or_can_plt_0720",
+      "cancelled": true,
+      "organic": true,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_cancel=100%"
+    },
+    {
+      "name": "HMS_non_can_plt_0720",
+      "cancelled": true,
+      "organic": false,
+      "user_status": "0,1,2",
+      "plan": "dflt_plan_cancel=100%"
+    }
+  ],
+  "plan": {
+    "dflt_plan": {
+      "menu": [
+        {
+          "template": 0,
+          "config": "config0_2",
+          "total_count": -1,
+          "is_default": true
+        }
+      ],
+      "device_maximum": [
+        {
+          "template": 9,
+          "config": "config9_5",
+          "total_count": -1
+        }
+      ],
+      "unbind": [
+        {
+          "template": 9,
+          "config": "config9_5",
+          "total_count": -1
+        }
+      ]
+    },
+    "dflt_plan_upgrade": {
+      "menu": [
+        {
+          "template": 8,
+          "config": "config8",
+          "is_default": true
+        }
+      ],
+      "device_maximum": [
+        {
+          "template": 9,
+          "config": "config9_5",
+          "total_count": -1
+        }
+      ],
+      "unbind": [
+        {
+          "template": 9,
+          "config": "config9_5",
+          "total_count": -1
+        }
+      ]
+    },
+    "dflt_plan_cancel": {
+      "menu": [
+        {
+          "template": 9,
+          "config": "config9_5",
+          "is_default": true
+        }
+      ]
+    }
+  }
+}

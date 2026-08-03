@@ -1,0 +1,12 @@
+{
+  "url": "users.acdtop.com",
+  "interval": 30,
+  "countries": {
+    "all": {
+      "sample_rate_by_api": {
+        "ping": 0,
+        "activate": 1
+      }
+    }
+  }
+}

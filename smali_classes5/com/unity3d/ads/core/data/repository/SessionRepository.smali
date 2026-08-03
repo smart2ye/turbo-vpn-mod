@@ -1,0 +1,290 @@
+.class public interface abstract Lcom/unity3d/ads/core/data/repository/SessionRepository;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/unity3d/ads/core/data/repository/SessionRepository$DefaultImpls;
+    }
+.end annotation
+
+
+# virtual methods
+.method public abstract addTimeToGlobalAdsFocusTime(I)V
+.end method
+
+.method public abstract getFeatureFlags()Lgatewayprotocol/v1/NativeConfigurationOuterClass$FeatureFlags;
+.end method
+
+.method public abstract getGameId()Ljava/lang/String;
+.end method
+
+.method public abstract getGatewayCache(Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lf5/c<",
+            "-",
+            "Lcom/google/protobuf/ByteString;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getGatewayState()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getGatewayUrl()Ljava/lang/String;
+.end method
+
+.method public abstract getHeaderBiddingTokenCounter()I
+.end method
+
+.method public abstract getInitializationConfiguration()Lcom/unity3d/ads/core/data/model/InitializationConfigurationInternal;
+.end method
+
+.method public abstract getInitializationError()Lcom/unity3d/ads/core/data/model/exception/InitializationException;
+.end method
+
+.method public abstract getInitializationState()Lcom/unity3d/ads/core/data/model/InitializationState;
+.end method
+
+.method public abstract getNativeConfiguration()Lgatewayprotocol/v1/NativeConfigurationOuterClass$NativeConfiguration;
+.end method
+
+.method public abstract getObserveInitializationState()Lkotlinx/coroutines/flow/c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlinx/coroutines/flow/c;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getOnChange()Lkotlinx/coroutines/flow/m;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lkotlinx/coroutines/flow/m;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getPrivacy(Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lf5/c<",
+            "-",
+            "Lcom/google/protobuf/ByteString;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getPrivacyFsm(Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lf5/c<",
+            "-",
+            "Lcom/google/protobuf/ByteString;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getRequestUrlOverrides()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lgatewayprotocol/v1/InitializationResponseOuterClass$RequestUrlOverride;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getScarEligibleFormats()Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lgatewayprotocol/v1/AdFormatOuterClass$AdFormat;",
+            ">;"
+        }
+    .end annotation
+.end method
+
+.method public abstract getSessionCounters()Lgatewayprotocol/v1/SessionCountersOuterClass$SessionCounters;
+.end method
+
+.method public abstract getSessionId()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getSessionToken()Lcom/google/protobuf/ByteString;
+.end method
+
+.method public abstract getShouldInitialize()Z
+.end method
+
+.method public abstract getTokenCounters()Lcom/unity3d/ads/core/data/model/TokenCounters;
+.end method
+
+.method public abstract getUnityInstallationId()Ljava/lang/String;
+.end method
+
+.method public abstract getUnityMegaSessionId()Ljava/lang/String;
+.end method
+
+.method public abstract incrementBannerImpressionCount()V
+.end method
+
+.method public abstract incrementBannerLoadRequestAdmCount()V
+.end method
+
+.method public abstract incrementBannerLoadRequestCount()V
+.end method
+
+.method public abstract incrementFocusChangeCount()V
+.end method
+
+.method public abstract incrementGlobalAdsFocusChangeCount()V
+.end method
+
+.method public abstract incrementLoadRequestAdmCount()V
+.end method
+
+.method public abstract incrementLoadRequestCount()V
+.end method
+
+.method public abstract incrementTokenSequenceNumber()V
+.end method
+
+.method public abstract incrementTokenStartsCount()V
+.end method
+
+.method public abstract incrementTokenWinsCount()V
+.end method
+
+.method public abstract isDiagnosticsEnabled()Z
+.end method
+
+.method public abstract isFirstInitAttempt()Z
+.end method
+
+.method public abstract isOmEnabled()Z
+.end method
+
+.method public abstract isSdkInitialized()Z
+.end method
+
+.method public abstract isTestModeEnabled()Z
+.end method
+
+.method public abstract persistNativeConfiguration(Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lf5/c<",
+            "-",
+            "LZ4/r;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract resetTokenCounters()V
+.end method
+
+.method public abstract setGameId(Ljava/lang/String;)V
+.end method
+
+.method public abstract setGatewayCache(Lcom/google/protobuf/ByteString;Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/protobuf/ByteString;",
+            "Lf5/c<",
+            "-",
+            "LZ4/r;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract setGatewayState(Lcom/google/protobuf/ByteString;)V
+.end method
+
+.method public abstract setGatewayUrl(Ljava/lang/String;)V
+.end method
+
+.method public abstract setInitializationConfiguration(Lcom/unity3d/ads/core/data/model/InitializationConfigurationInternal;)V
+.end method
+
+.method public abstract setInitializationError(Lcom/unity3d/ads/core/data/model/exception/InitializationException;)V
+.end method
+
+.method public abstract setInitializationState(Lcom/unity3d/ads/core/data/model/InitializationState;)V
+.end method
+
+.method public abstract setNativeConfiguration(Lgatewayprotocol/v1/NativeConfigurationOuterClass$NativeConfiguration;)V
+.end method
+
+.method public abstract setPrivacy(Lcom/google/protobuf/ByteString;Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/protobuf/ByteString;",
+            "Lf5/c<",
+            "-",
+            "LZ4/r;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract setPrivacyFsm(Lcom/google/protobuf/ByteString;Lf5/c;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/protobuf/ByteString;",
+            "Lf5/c<",
+            "-",
+            "LZ4/r;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+.end method
+
+.method public abstract setRequestUrlOverrides(Ljava/util/List;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lgatewayprotocol/v1/InitializationResponseOuterClass$RequestUrlOverride;",
+            ">;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract setSessionCounters(Lgatewayprotocol/v1/SessionCountersOuterClass$SessionCounters;)V
+.end method
+
+.method public abstract setSessionToken(Lcom/google/protobuf/ByteString;)V
+.end method
+
+.method public abstract setShouldInitialize(Z)V
+.end method
+
+.method public abstract setTokenCounters(Lcom/unity3d/ads/core/data/model/TokenCounters;)V
+.end method

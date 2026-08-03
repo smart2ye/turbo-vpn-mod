@@ -1,0 +1,20 @@
+{
+  "is_enable": 0,
+  "limit_time": 0,
+  "reset_time": "04:00:00",
+  "first_give_time": 30,
+  "other_give_mintime": 20,
+  "other_give_maxtime": 30,
+  "add_normal_mintime": 30,
+  "add_normal_maxtime": 60,
+  "cooling_time": 20,
+  "add_reward_time": 120,
+  "noremaind_mintime": 10,
+  "noremaind_maxtime": 10,
+  "cold_dlg_show": 5,
+  "interval_dlg_show": 1,
+  "start_pushtime": 5,
+  "push_title": "Connection will end soon",
+  "push_content": "Add time for free now!",
+  "count_down_type": 1
+}

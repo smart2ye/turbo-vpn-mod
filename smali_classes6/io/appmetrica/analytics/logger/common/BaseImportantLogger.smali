@@ -1,0 +1,164 @@
+.class public abstract Lio/appmetrica/analytics/logger/common/BaseImportantLogger;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Lio/appmetrica/analytics/logger/common/impl/c;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lio/appmetrica/analytics/logger/common/impl/c;
+
+    .line 5
+    .line 6
+    new-instance v1, Lio/appmetrica/analytics/logger/common/impl/d;
+
+    .line 7
+    .line 8
+    invoke-direct {v1, p1}, Lio/appmetrica/analytics/logger/common/impl/d;-><init>(Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance p1, Lio/appmetrica/analytics/logger/common/impl/a;
+
+    .line 12
+    .line 13
+    invoke-direct {p1}, Lio/appmetrica/analytics/logger/common/impl/a;-><init>()V
+
+    .line 14
+    .line 15
+    .line 16
+    new-instance v2, Lio/appmetrica/analytics/logger/common/impl/b;
+
+    .line 17
+    .line 18
+    invoke-direct {v2}, Lio/appmetrica/analytics/logger/common/impl/b;-><init>()V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-direct {v0, v1, p1, v2}, Lio/appmetrica/analytics/logger/common/impl/c;-><init>(Lio/appmetrica/analytics/logger/common/impl/d;Lio/appmetrica/analytics/logger/common/impl/a;Lio/appmetrica/analytics/logger/common/impl/b;)V
+
+    .line 22
+    .line 23
+    .line 24
+    iput-object v0, p0, Lio/appmetrica/analytics/logger/common/BaseImportantLogger;->a:Lio/appmetrica/analytics/logger/common/impl/c;
+
+    .line 25
+    .line 26
+    return-void
+.end method
+
+
+# virtual methods
+.method public varargs info(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)V
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lio/appmetrica/analytics/logger/common/BaseImportantLogger;->a:Lio/appmetrica/analytics/logger/common/impl/c;
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Lio/appmetrica/analytics/logger/common/impl/c;->b:Lio/appmetrica/analytics/logger/common/impl/a;
+
+    .line 4
+    .line 5
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 6
+    .line 7
+    .line 8
+    invoke-static {p1, p2, p3}, Lio/appmetrica/analytics/logger/common/impl/a;->a(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p1
+
+    .line 12
+    iget-object p2, v0, Lio/appmetrica/analytics/logger/common/impl/c;->c:Lio/appmetrica/analytics/logger/common/impl/b;
+
+    .line 13
+    .line 14
+    invoke-virtual {p2, p1}, Lio/appmetrica/analytics/logger/common/impl/b;->a(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    .line 15
+    .line 16
+    .line 17
+    move-result-object p1
+
+    .line 18
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result p2
+
+    .line 22
+    const/4 p3, 0x0
+
+    .line 23
+    :goto_0
+    if-ge p3, p2, :cond_1
+
+    .line 24
+    .line 25
+    invoke-virtual {p1, p3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    .line 26
+    .line 27
+    .line 28
+    move-result-object v1
+
+    .line 29
+    add-int/lit8 p3, p3, 0x1
+
+    .line 30
+    .line 31
+    check-cast v1, Ljava/lang/String;
+
+    .line 32
+    .line 33
+    iget-object v2, v0, Lio/appmetrica/analytics/logger/common/impl/c;->a:Lio/appmetrica/analytics/logger/common/impl/d;
+
+    .line 34
+    .line 35
+    iget-object v2, v2, Lio/appmetrica/analytics/logger/common/impl/d;->a:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    if-nez v1, :cond_0
+
+    .line 38
+    .line 39
+    const-string v1, ""
+
+    .line 40
+    .line 41
+    :cond_0
+    const/4 v3, 0x4
+
+    .line 42
+    invoke-static {v3, v2, v1}, Landroid/util/Log;->println(ILjava/lang/String;Ljava/lang/String;)I
+
+    .line 43
+    .line 44
+    .line 45
+    goto :goto_0
+
+    .line 46
+    :cond_1
+    return-void
+.end method

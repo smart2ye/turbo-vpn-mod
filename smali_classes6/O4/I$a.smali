@@ -1,0 +1,110 @@
+.class LO4/I$a;
+.super Lx0/a;
+.source "SourceFile"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = LO4/I;->G(LC0/d;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:LC0/d;
+
+.field final synthetic b:LO4/I;
+
+
+# direct methods
+.method constructor <init>(LO4/I;LC0/d;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, LO4/I$a;->b:LO4/I;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, LO4/I$a;->a:LC0/d;
+
+    .line 4
+    .line 5
+    invoke-direct {p0}, Lx0/a;-><init>()V
+
+    .line 6
+    .line 7
+    .line 8
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick()V
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Lx0/a;->onClick()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, LO4/I$a;->b:LO4/I;
+
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    invoke-static {v0, v1}, LO4/I;->v(LO4/I;Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v0, p0, LO4/I$a;->b:LO4/I;
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1}, LO4/I;->w(LO4/I;Z)V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method
+
+.method public onLeftApplication()V
+    .locals 2
+
+    .line 1
+    invoke-super {p0}, Lx0/a;->onLeftApplication()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, LO4/I$a;->a:LC0/d;
+
+    .line 5
+    .line 6
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-virtual {v0, v1}, Lx0/e;->I(Lx0/f;)V
+
+    .line 8
+    .line 9
+    .line 10
+    iget-object v0, p0, LO4/I$a;->a:LC0/d;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0}, Lx0/e;->E()V
+
+    .line 13
+    .line 14
+    .line 15
+    return-void
+.end method

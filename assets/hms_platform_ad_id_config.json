@@ -1,0 +1,112 @@
+{
+  "id_config": {
+    "full_hw_5": {
+      "type": "full_huawei",
+      "id": "j3lzzez9tj",
+      "desc": "full_huawei:global_5_huawei",
+      "auto_reload": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_5": {
+      "type": "full_bigo",
+      "id": "10172197-10165595",
+      "desc": "full_bigo:global_5_huawei",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_5": {
+      "id": "R-M-2087893-21",
+      "type": "full_yandex",
+      "desc": "full_yandex:global_5_huawei",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_hw_3": {
+      "type": "full_huawei",
+      "id": "c1kv0xvyz1",
+      "desc": "full_huawei:global_3_huawei",
+      "auto_reload": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_3": {
+      "type": "full_bigo",
+      "id": "10172197-10119838",
+      "desc": "full_bigo:global_53_huawei",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_3": {
+      "id": "R-M-2087893-22",
+      "type": "full_yandex",
+      "desc": "full_yandex:global_3_huawei",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_unity_3": {
+      "type": "full_unity",
+      "id": "full_unity_global_3_huawei",
+      "desc": "full_unity_global_3_huawei"
+    },
+    "full_hw_0": {
+      "type": "full_huawei",
+      "id": "a9uk4a7oa5",
+      "desc": "full_huawei:global_0_huawei",
+      "auto_reload": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_0": {
+      "type": "full_bigo",
+      "id": "10172197-10076961",
+      "desc": "full_bigo:global_0_huawei",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_0": {
+      "id": "R-M-2087893-23",
+      "type": "full_yandex",
+      "desc": "full_yandex:global_0_huawei",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "native_admob_1": {
+      "type": "native_admob",
+      "id": "ca-app-pub-6887521785290583/3562658418",
+      "desc": "native_admob:disconnect_all",
+      "expired_time": 60
+    },
+    "native_adx_1": {
+      "type": "native_adx",
+      "id": "/21925273764/turbodisconnected:adx_native_floor_test",
+      "desc": "native_adx:disconnect_floor_0508",
+      "ip_sensitive": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "native_adx_2": {
+      "type": "native_adx",
+      "id": "/21925273764/turbodisconeected:adx_native_test",
+      "desc": "native_adx:disconnect_0508",
+      "ip_sensitive": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "open_admob_1": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/6333691320",
+      "desc": "open_admob:high"
+    },
+    "open_admob_2": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/2278309510",
+      "desc": "open_admob:med"
+    },
+    "open_admob_3": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/5155754290",
+      "desc": "open_admob:low"
+    }
+  }
+}

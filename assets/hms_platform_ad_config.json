@@ -1,0 +1,290 @@
+{
+  "enable_google_cmp": true,
+  "placements": {
+    "connected": {
+      "ads": [
+        [
+          "full_hw_5"
+        ],
+        [
+          "full_bigo_5"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_hw_3"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_hw_0"
+        ],
+        [
+          "full_bigo_0"
+        ],
+        [
+          "full_yandex_0"
+        ]
+      ]
+    },
+    "return_app": {
+      "ads": [
+        [
+          "full_hw_5"
+        ],
+        [
+          "full_bigo_5"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_hw_3"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_hw_0"
+        ],
+        [
+          "full_bigo_0"
+        ],
+        [
+          "full_yandex_0"
+        ]
+      ]
+    },
+    "disconnected": {
+      "ads": [
+        [
+          "full_hw_5"
+        ],
+        [
+          "full_bigo_5"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_hw_3"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_hw_0"
+        ],
+        [
+          "full_bigo_0"
+        ],
+        [
+          "full_yandex_0"
+        ]
+      ]
+    },
+    "addconnecttime": {
+      "ads": [
+        [
+          "full_hw_5"
+        ],
+        [
+          "full_bigo_5"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_hw_3"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_hw_0"
+        ],
+        [
+          "full_bigo_0"
+        ],
+        [
+          "full_yandex_0"
+        ]
+      ]
+    },
+    "addconnecttime2": {
+      "ads": [
+        [
+          "full_hw_5"
+        ],
+        [
+          "full_bigo_5"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_hw_3"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_hw_0"
+        ],
+        [
+          "full_bigo_0"
+        ],
+        [
+          "full_yandex_0"
+        ]
+      ]
+    },
+    "go_out_server_list": {
+      "ads": [
+        [
+          "full_hw_5"
+        ],
+        [
+          "full_bigo_5"
+        ],
+        [
+          "full_yandex_5"
+        ],
+        [
+          "full_hw_3"
+        ],
+        [
+          "full_bigo_3"
+        ],
+        [
+          "full_yandex_3"
+        ],
+        [
+          "full_hw_0"
+        ],
+        [
+          "full_bigo_0"
+        ],
+        [
+          "full_yandex_0"
+        ]
+      ]
+    }
+  },
+  "timings": {
+    "connected": {
+      "show": {
+        "placement": "connected"
+      }
+    },
+    "return_app": {
+      "show": {
+        "placement": "return_app"
+      }
+    },
+    "go_out_server_list": {
+      "show": {
+        "placement": "go_out_server_list"
+      }
+    },
+    "addconnecttime": {
+      "show": {
+        "placement": "addconnecttime"
+      }
+    },
+    "addconnecttime2": {
+      "show": {
+        "placement": "addconnecttime2"
+      }
+    },
+    "disconnected": {
+      "show": {
+        "placement": "disconnected"
+      }
+    },
+    "app_launch": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": []
+            }
+          }
+        ]
+      }
+    },
+    "back_to_foreground": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": [],
+              "return_app": []
+            }
+          }
+        ]
+      }
+    },
+    "vpn_pre_connected": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": []
+            }
+          }
+        ]
+      }
+    },
+    "vpn_connected": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "connected": []
+            }
+          }
+        ]
+      }
+    },
+    "go_to_background": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "return_app": []
+            }
+          }
+        ]
+      }
+    },
+    "vpn_timer_task": {
+      "load": {
+        "placement_config": [
+          {
+            "placements": {
+              "addconnecttime": []
+            }
+          }
+        ]
+      }
+    }
+  }
+}

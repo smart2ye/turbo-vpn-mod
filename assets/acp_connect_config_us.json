@@ -1,0 +1,15 @@
+{
+  "acp_config": {
+    "all_connect_sec_timeout_mobile": 25,
+    "all_connect_sec_timeout_wifi": 20,
+    "single_connect_sec_timeout": 17,
+    "acp_protocols": [
+      "ipsec",
+      "issr"
+    ]
+  },
+  "connected_ad_config": {
+    "wait_sec": 2,
+    "wait_first_id": true
+  }
+}

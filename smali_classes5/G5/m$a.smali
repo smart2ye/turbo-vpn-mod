@@ -1,0 +1,462 @@
+.class LG5/m$a;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/squareup/picasso/Transformation;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = LG5/m;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0xa
+    name = "a"
+.end annotation
+
+
+# instance fields
+.field private final a:I
+
+.field private final b:I
+
+.field private final c:I
+
+
+# direct methods
+.method constructor <init>(I)V
+    .locals 2
+
+    const/4 v0, 0x0
+
+    const/4 v1, -0x1
+
+    .line 1
+    invoke-direct {p0, p1, v0, v1}, LG5/m$a;-><init>(III)V
+
+    return-void
+.end method
+
+.method constructor <init>(III)V
+    .locals 0
+
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput p1, p0, LG5/m$a;->a:I
+
+    .line 4
+    iput p2, p0, LG5/m$a;->c:I
+
+    .line 5
+    iput p3, p0, LG5/m$a;->b:I
+
+    return-void
+.end method
+
+.method private a(III)Landroid/graphics/RectF;
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/graphics/RectF;
+
+    .line 2
+    .line 3
+    int-to-float v1, p3
+
+    .line 4
+    sub-int/2addr p1, p3
+
+    .line 5
+    int-to-float p1, p1
+
+    .line 6
+    sub-int/2addr p2, p3
+
+    .line 7
+    int-to-float p2, p2
+
+    .line 8
+    invoke-direct {v0, v1, v1, p1, p2}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object v0
+.end method
+
+.method private b(Landroid/graphics/Bitmap;)Landroid/graphics/Paint;
+    .locals 3
+
+    .line 1
+    new-instance v0, Landroid/graphics/Paint;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    new-instance v1, Landroid/graphics/BitmapShader;
+
+    .line 11
+    .line 12
+    sget-object v2, Landroid/graphics/Shader$TileMode;->CLAMP:Landroid/graphics/Shader$TileMode;
+
+    .line 13
+    .line 14
+    invoke-direct {v1, p1, v2, v2}, Landroid/graphics/BitmapShader;-><init>(Landroid/graphics/Bitmap;Landroid/graphics/Shader$TileMode;Landroid/graphics/Shader$TileMode;)V
+
+    .line 15
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
+
+    .line 18
+    .line 19
+    .line 20
+    return-object v0
+.end method
+
+.method private c()Landroid/graphics/Paint;
+    .locals 2
+
+    .line 1
+    new-instance v0, Landroid/graphics/Paint;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Landroid/graphics/Paint;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    const/4 v1, 0x1
+
+    .line 7
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setAntiAlias(Z)V
+
+    .line 8
+    .line 9
+    .line 10
+    sget-object v1, Landroid/graphics/Paint$Style;->FILL:Landroid/graphics/Paint$Style;
+
+    .line 11
+    .line 12
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
+
+    .line 13
+    .line 14
+    .line 15
+    iget v1, p0, LG5/m$a;->c:I
+
+    .line 16
+    .line 17
+    invoke-virtual {v0, v1}, Landroid/graphics/Paint;->setColor(I)V
+
+    .line 18
+    .line 19
+    .line 20
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public key()Ljava/lang/String;
+    .locals 6
+
+    .line 1
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    .line 2
+    .line 3
+    iget v1, p0, LG5/m$a;->a:I
+
+    .line 4
+    .line 5
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 6
+    .line 7
+    .line 8
+    move-result-object v1
+
+    .line 9
+    iget v2, p0, LG5/m$a;->c:I
+
+    .line 10
+    .line 11
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    .line 14
+    move-result-object v2
+
+    .line 15
+    iget v3, p0, LG5/m$a;->b:I
+
+    .line 16
+    .line 17
+    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 18
+    .line 19
+    .line 20
+    move-result-object v3
+
+    .line 21
+    const/4 v4, 0x3
+
+    .line 22
+    new-array v4, v4, [Ljava/lang/Object;
+
+    .line 23
+    .line 24
+    const/4 v5, 0x0
+
+    .line 25
+    aput-object v1, v4, v5
+
+    .line 26
+    .line 27
+    const/4 v1, 0x1
+
+    .line 28
+    aput-object v2, v4, v1
+
+    .line 29
+    .line 30
+    const/4 v1, 0x2
+
+    .line 31
+    aput-object v3, v4, v1
+
+    .line 32
+    .line 33
+    const-string v1, "rounded-%s-%s-%s"
+
+    .line 34
+    .line 35
+    invoke-static {v0, v1, v4}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    .line 36
+    .line 37
+    .line 38
+    move-result-object v0
+
+    .line 39
+    return-object v0
+.end method
+
+.method public transform(Landroid/graphics/Bitmap;)Landroid/graphics/Bitmap;
+    .locals 7
+
+    .line 1
+    iget v0, p0, LG5/m$a;->b:I
+
+    .line 2
+    .line 3
+    if-lez v0, :cond_0
+
+    .line 4
+    .line 5
+    new-instance v0, Landroid/graphics/Canvas;
+
+    .line 6
+    .line 7
+    invoke-direct {v0, p1}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-direct {p0}, LG5/m$a;->c()Landroid/graphics/Paint;
+
+    .line 11
+    .line 12
+    .line 13
+    move-result-object v1
+
+    .line 14
+    new-instance v2, Landroid/graphics/Path;
+
+    .line 15
+    .line 16
+    invoke-direct {v2}, Landroid/graphics/Path;-><init>()V
+
+    .line 17
+    .line 18
+    .line 19
+    sget-object v3, Landroid/graphics/Path$FillType;->INVERSE_EVEN_ODD:Landroid/graphics/Path$FillType;
+
+    .line 20
+    .line 21
+    invoke-virtual {v2, v3}, Landroid/graphics/Path;->setFillType(Landroid/graphics/Path$FillType;)V
+
+    .line 22
+    .line 23
+    .line 24
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 25
+    .line 26
+    .line 27
+    move-result v3
+
+    .line 28
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v4
+
+    .line 32
+    iget v5, p0, LG5/m$a;->b:I
+
+    .line 33
+    .line 34
+    invoke-direct {p0, v3, v4, v5}, LG5/m$a;->a(III)Landroid/graphics/RectF;
+
+    .line 35
+    .line 36
+    .line 37
+    move-result-object v3
+
+    .line 38
+    iget v4, p0, LG5/m$a;->a:I
+
+    .line 39
+    .line 40
+    int-to-float v5, v4
+
+    .line 41
+    int-to-float v4, v4
+
+    .line 42
+    sget-object v6, Landroid/graphics/Path$Direction;->CW:Landroid/graphics/Path$Direction;
+
+    .line 43
+    .line 44
+    invoke-virtual {v2, v3, v5, v4, v6}, Landroid/graphics/Path;->addRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Path$Direction;)V
+
+    .line 45
+    .line 46
+    .line 47
+    invoke-virtual {v0, v2, v1}, Landroid/graphics/Canvas;->drawPath(Landroid/graphics/Path;Landroid/graphics/Paint;)V
+
+    .line 48
+    .line 49
+    .line 50
+    :cond_0
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v0
+
+    .line 54
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 55
+    .line 56
+    .line 57
+    move-result v1
+
+    .line 58
+    sget-object v2, Landroid/graphics/Bitmap$Config;->ARGB_8888:Landroid/graphics/Bitmap$Config;
+
+    .line 59
+    .line 60
+    invoke-static {v0, v1, v2}, Landroid/graphics/Bitmap;->createBitmap(IILandroid/graphics/Bitmap$Config;)Landroid/graphics/Bitmap;
+
+    .line 61
+    .line 62
+    .line 63
+    move-result-object v0
+
+    .line 64
+    new-instance v1, Landroid/graphics/Canvas;
+
+    .line 65
+    .line 66
+    invoke-direct {v1, v0}, Landroid/graphics/Canvas;-><init>(Landroid/graphics/Bitmap;)V
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-direct {p0, p1}, LG5/m$a;->b(Landroid/graphics/Bitmap;)Landroid/graphics/Paint;
+
+    .line 70
+    .line 71
+    .line 72
+    move-result-object v2
+
+    .line 73
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
+
+    .line 74
+    .line 75
+    .line 76
+    move-result v3
+
+    .line 77
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+
+    .line 78
+    .line 79
+    .line 80
+    move-result v4
+
+    .line 81
+    const/4 v5, 0x0
+
+    .line 82
+    invoke-direct {p0, v3, v4, v5}, LG5/m$a;->a(III)Landroid/graphics/RectF;
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-object v3
+
+    .line 86
+    iget v4, p0, LG5/m$a;->a:I
+
+    .line 87
+    .line 88
+    int-to-float v5, v4
+
+    .line 89
+    int-to-float v4, v4
+
+    .line 90
+    invoke-virtual {v1, v3, v5, v4, v2}, Landroid/graphics/Canvas;->drawRoundRect(Landroid/graphics/RectF;FFLandroid/graphics/Paint;)V
+
+    .line 91
+    .line 92
+    .line 93
+    if-eq p1, v0, :cond_1
+
+    .line 94
+    .line 95
+    invoke-virtual {p1}, Landroid/graphics/Bitmap;->recycle()V
+
+    .line 96
+    .line 97
+    .line 98
+    :cond_1
+    return-object v0
+.end method

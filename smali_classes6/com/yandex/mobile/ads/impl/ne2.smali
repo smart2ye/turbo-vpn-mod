@@ -1,0 +1,144 @@
+.class public final Lcom/yandex/mobile/ads/impl/ne2;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# direct methods
+.method public static final a(Ljava/lang/String;)Ljava/lang/Long;
+    .locals 6
+
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    .line 1
+    :try_start_0
+    new-instance v1, Ljava/text/SimpleDateFormat;
+
+    const-string v2, "hh:mm:ss"
+
+    sget-object v3, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    invoke-direct {v1, v2, v3}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+
+    .line 2
+    invoke-virtual {v1, p0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v2
+
+    const-string p0, "00:00:00"
+
+    invoke-virtual {v1, p0}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/util/Date;->getTime()J
+
+    move-result-wide v4
+
+    sub-long/2addr v2, v4
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    .line 3
+    :catch_0
+    sget p0, Lcom/yandex/mobile/ads/impl/op0;->b:I
+
+    :cond_0
+    return-object v0
+.end method
+
+.method private static a()V
+    .locals 3
+
+    .line 5
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "AdBreak"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v2, " not set!"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public static final a(Ljava/lang/Object;)V
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    return-void
+
+    .line 4
+    :cond_0
+    invoke-static {}, Lcom/yandex/mobile/ads/impl/ne2;->a()V
+
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static final b(Ljava/lang/String;)Ljava/lang/Integer;
+    .locals 1
+
+    .line 1
+    const/4 v0, 0x0
+
+    .line 2
+    if-eqz p0, :cond_0
+
+    .line 3
+    .line 4
+    :try_start_0
+    invoke-static {p0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    .line 5
+    .line 6
+    .line 7
+    move-result p0
+
+    .line 8
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    .line 9
+    .line 10
+    .line 11
+    move-result-object p0
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 12
+    return-object p0
+
+    .line 13
+    :catch_0
+    sget p0, Lcom/yandex/mobile/ads/impl/op0;->b:I
+
+    .line 14
+    .line 15
+    :cond_0
+    return-object v0
+.end method

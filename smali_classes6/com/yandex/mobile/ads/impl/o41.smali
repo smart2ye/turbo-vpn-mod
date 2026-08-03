@@ -1,0 +1,637 @@
+.class public final Lcom/yandex/mobile/ads/impl/o41;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# instance fields
+.field private final a:Lcom/yandex/mobile/ads/impl/qi0;
+
+.field private final b:Lcom/yandex/mobile/ads/impl/wu0;
+
+.field private final c:Lcom/yandex/mobile/ads/impl/eg;
+
+.field private final d:Lcom/yandex/mobile/ads/impl/kg;
+
+
+# direct methods
+.method public synthetic constructor <init>(Landroid/content/Context;)V
+    .locals 3
+
+    .line 1
+    new-instance v0, Lcom/yandex/mobile/ads/impl/hj0;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/hj0;-><init>()V
+
+    .line 2
+    new-instance v1, Lcom/yandex/mobile/ads/impl/qi0;
+
+    invoke-direct {v1, p1, v0}, Lcom/yandex/mobile/ads/impl/qi0;-><init>(Landroid/content/Context;Lcom/yandex/mobile/ads/impl/hj0;)V
+
+    .line 3
+    new-instance p1, Lcom/yandex/mobile/ads/impl/wu0;
+
+    invoke-direct {p1, v1}, Lcom/yandex/mobile/ads/impl/wu0;-><init>(Lcom/yandex/mobile/ads/impl/qi0;)V
+
+    .line 4
+    new-instance v0, Lcom/yandex/mobile/ads/impl/eg;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/eg;-><init>()V
+
+    .line 5
+    new-instance v2, Lcom/yandex/mobile/ads/impl/kg;
+
+    invoke-direct {v2}, Lcom/yandex/mobile/ads/impl/kg;-><init>()V
+
+    .line 6
+    invoke-direct {p0, v1, p1, v0, v2}, Lcom/yandex/mobile/ads/impl/o41;-><init>(Lcom/yandex/mobile/ads/impl/qi0;Lcom/yandex/mobile/ads/impl/wu0;Lcom/yandex/mobile/ads/impl/eg;Lcom/yandex/mobile/ads/impl/kg;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lcom/yandex/mobile/ads/impl/qi0;Lcom/yandex/mobile/ads/impl/wu0;Lcom/yandex/mobile/ads/impl/eg;Lcom/yandex/mobile/ads/impl/kg;)V
+    .locals 0
+
+    .line 7
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 8
+    iput-object p1, p0, Lcom/yandex/mobile/ads/impl/o41;->a:Lcom/yandex/mobile/ads/impl/qi0;
+
+    .line 9
+    iput-object p2, p0, Lcom/yandex/mobile/ads/impl/o41;->b:Lcom/yandex/mobile/ads/impl/wu0;
+
+    .line 10
+    iput-object p3, p0, Lcom/yandex/mobile/ads/impl/o41;->c:Lcom/yandex/mobile/ads/impl/eg;
+
+    .line 11
+    iput-object p4, p0, Lcom/yandex/mobile/ads/impl/o41;->d:Lcom/yandex/mobile/ads/impl/kg;
+
+    return-void
+.end method
+
+.method private final a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+    .locals 7
+
+    .line 20
+    iget-object v0, p0, Lcom/yandex/mobile/ads/impl/o41;->d:Lcom/yandex/mobile/ads/impl/kg;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 21
+    invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    const v1, -0x400e3dec
+
+    const-string v2, "favicon"
+
+    const-string v3, "feedback"
+
+    const-string v4, "icon"
+
+    const-string v5, "media"
+
+    if-eq v0, v1, :cond_4
+
+    const v1, -0xb6a147b
+
+    if-eq v0, v1, :cond_3
+
+    const v1, 0x313c79
+
+    if-eq v0, v1, :cond_2
+
+    const v1, 0x62f6fe4
+
+    if-eq v0, v1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {p2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_1
+
+    goto :goto_0
+
+    .line 22
+    :cond_1
+    new-instance v0, Lcom/yandex/mobile/ads/impl/zu0;
+
+    .line 23
+    new-instance v1, Lcom/yandex/mobile/ads/impl/ri0;
+
+    invoke-direct {v1}, Lcom/yandex/mobile/ads/impl/ri0;-><init>()V
+
+    .line 24
+    new-instance v6, Lcom/yandex/mobile/ads/impl/yw0;
+
+    invoke-direct {v6}, Lcom/yandex/mobile/ads/impl/yw0;-><init>()V
+
+    .line 25
+    invoke-direct {v0, v1, v6}, Lcom/yandex/mobile/ads/impl/zu0;-><init>(Lcom/yandex/mobile/ads/impl/ri0;Lcom/yandex/mobile/ads/impl/yw0;)V
+
+    goto :goto_1
+
+    .line 26
+    :cond_2
+    invoke-virtual {p2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    goto :goto_0
+
+    :cond_3
+    invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    goto :goto_0
+
+    :cond_4
+    invoke-virtual {p2, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_5
+
+    .line 27
+    :goto_0
+    new-instance v0, Lcom/yandex/mobile/ads/impl/f32;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/f32;-><init>()V
+
+    goto :goto_1
+
+    .line 28
+    :cond_5
+    new-instance v0, Lcom/yandex/mobile/ads/impl/ri0;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/ri0;-><init>()V
+
+    :goto_1
+    if-eqz p1, :cond_b
+
+    .line 29
+    invoke-interface {v0, p1}, Lcom/yandex/mobile/ads/impl/jg;->a(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    .line 30
+    iget-object v0, p0, Lcom/yandex/mobile/ads/impl/o41;->c:Lcom/yandex/mobile/ads/impl/eg;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 31
+    invoke-virtual {p2}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    sparse-switch v0, :sswitch_data_0
+
+    goto :goto_2
+
+    :sswitch_0
+    invoke-virtual {p2, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_6
+
+    goto :goto_2
+
+    .line 32
+    :cond_6
+    new-instance v0, Lcom/yandex/mobile/ads/impl/xu0;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/xu0;-><init>()V
+
+    goto :goto_3
+
+    .line 33
+    :sswitch_1
+    invoke-virtual {p2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_9
+
+    goto :goto_2
+
+    :sswitch_2
+    invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_7
+
+    goto :goto_2
+
+    .line 34
+    :cond_7
+    new-instance v0, Lcom/yandex/mobile/ads/impl/ua0;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/ua0;-><init>()V
+
+    goto :goto_3
+
+    .line 35
+    :sswitch_3
+    const-string v0, "review_count"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    goto :goto_2
+
+    :sswitch_4
+    const-string v0, "rating"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    goto :goto_2
+
+    .line 36
+    :cond_8
+    new-instance v0, Lcom/yandex/mobile/ads/impl/td1;
+
+    .line 37
+    new-instance v1, Lcom/yandex/mobile/ads/impl/ur1;
+
+    invoke-direct {v1}, Lcom/yandex/mobile/ads/impl/ur1;-><init>()V
+
+    .line 38
+    invoke-direct {v0, v1}, Lcom/yandex/mobile/ads/impl/td1;-><init>(Lcom/yandex/mobile/ads/impl/ur1;)V
+
+    goto :goto_3
+
+    .line 39
+    :sswitch_5
+    invoke-virtual {p2, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_9
+
+    goto :goto_2
+
+    .line 40
+    :cond_9
+    new-instance v0, Lcom/yandex/mobile/ads/impl/kj0;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/kj0;-><init>()V
+
+    goto :goto_3
+
+    .line 41
+    :sswitch_6
+    const-string v0, "close_button"
+
+    invoke-virtual {p2, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_a
+
+    .line 42
+    :goto_2
+    new-instance v0, Lcom/yandex/mobile/ads/impl/e32;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/e32;-><init>()V
+
+    goto :goto_3
+
+    .line 43
+    :cond_a
+    new-instance v0, Lcom/yandex/mobile/ads/impl/dp;
+
+    invoke-direct {v0}, Lcom/yandex/mobile/ads/impl/dp;-><init>()V
+
+    .line 44
+    :goto_3
+    invoke-virtual {v0, p1, p2}, Lcom/yandex/mobile/ads/impl/dg;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object p1
+
+    return-object p1
+
+    :cond_b
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :sswitch_data_0
+    .sparse-switch
+        -0x6412e0a7 -> :sswitch_6
+        -0x400e3dec -> :sswitch_5
+        -0x37ea4e63 -> :sswitch_4
+        -0x301e3698 -> :sswitch_3
+        -0xb6a147b -> :sswitch_2
+        0x313c79 -> :sswitch_1
+        0x62f6fe4 -> :sswitch_0
+    .end sparse-switch
+.end method
+
+
+# virtual methods
+.method public final a(Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;Ljava/util/Map;)Ljava/util/List;
+    .locals 17
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Landroid/graphics/Bitmap;",
+            ">;)",
+            "Ljava/util/List<",
+            "Lcom/yandex/mobile/ads/impl/vf<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;>;"
+        }
+    .end annotation
+
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    .line 1
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getAge()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "age"
+
+    invoke-direct {v0, v2, v3}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v2
+
+    .line 2
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getBody()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "body"
+
+    invoke-direct {v0, v3, v4}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v3
+
+    .line 3
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getCallToAction()Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "call_to_action"
+
+    invoke-direct {v0, v4, v5}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v4
+
+    .line 4
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getDomain()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "domain"
+
+    invoke-direct {v0, v5, v6}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v5
+
+    .line 5
+    iget-object v6, v0, Lcom/yandex/mobile/ads/impl/o41;->a:Lcom/yandex/mobile/ads/impl/qi0;
+
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getFavicon()Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v1, v7}, Lcom/yandex/mobile/ads/impl/qi0;->a(Ljava/util/Map;Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;)Lcom/yandex/mobile/ads/impl/jj0;
+
+    move-result-object v6
+
+    .line 6
+    const-string v7, "favicon"
+
+    invoke-direct {v0, v6, v7}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v6
+
+    .line 7
+    iget-object v7, v0, Lcom/yandex/mobile/ads/impl/o41;->a:Lcom/yandex/mobile/ads/impl/qi0;
+
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getIcon()Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;
+
+    move-result-object v8
+
+    invoke-virtual {v7, v1, v8}, Lcom/yandex/mobile/ads/impl/qi0;->a(Ljava/util/Map;Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;)Lcom/yandex/mobile/ads/impl/jj0;
+
+    move-result-object v7
+
+    const-string v8, "icon"
+
+    invoke-direct {v0, v7, v8}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v7
+
+    .line 8
+    iget-object v8, v0, Lcom/yandex/mobile/ads/impl/o41;->b:Lcom/yandex/mobile/ads/impl/wu0;
+
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getImage()Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;
+
+    move-result-object v9
+
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getMedia()Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdMedia;
+
+    move-result-object v10
+
+    invoke-virtual {v8, v1, v9, v10}, Lcom/yandex/mobile/ads/impl/wu0;->a(Ljava/util/Map;Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdMedia;)Lcom/yandex/mobile/ads/impl/zw0;
+
+    move-result-object v8
+
+    .line 9
+    const-string v9, "media"
+
+    invoke-direct {v0, v8, v9}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v8
+
+    .line 10
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getPrice()Ljava/lang/String;
+
+    move-result-object v9
+
+    const-string v10, "price"
+
+    invoke-direct {v0, v9, v10}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v9
+
+    .line 11
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getRating()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-static {v10}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v10
+
+    const-string v11, "rating"
+
+    invoke-direct {v0, v10, v11}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v10
+
+    .line 12
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getReviewCount()Ljava/lang/String;
+
+    move-result-object v11
+
+    const-string v12, "review_count"
+
+    invoke-direct {v0, v11, v12}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v11
+
+    .line 13
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getSponsored()Ljava/lang/String;
+
+    move-result-object v12
+
+    const-string v13, "sponsored"
+
+    invoke-direct {v0, v12, v13}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v12
+
+    .line 14
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getTitle()Ljava/lang/String;
+
+    move-result-object v13
+
+    const-string v14, "title"
+
+    invoke-direct {v0, v13, v14}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v13
+
+    .line 15
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getWarning()Ljava/lang/String;
+
+    move-result-object v14
+
+    const-string v15, "warning"
+
+    invoke-direct {v0, v14, v15}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v14
+
+    .line 16
+    iget-object v15, v0, Lcom/yandex/mobile/ads/impl/o41;->a:Lcom/yandex/mobile/ads/impl/qi0;
+
+    move-object/from16 v16, v2
+
+    invoke-virtual/range {p1 .. p1}, Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdAssets;->getFeedback()Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;
+
+    move-result-object v2
+
+    invoke-virtual {v15, v1, v2}, Lcom/yandex/mobile/ads/impl/qi0;->a(Ljava/util/Map;Lcom/monetization/ads/mediation/nativeads/MediatedNativeAdImage;)Lcom/yandex/mobile/ads/impl/jj0;
+
+    move-result-object v1
+
+    .line 17
+    const-string v2, "feedback"
+
+    invoke-direct {v0, v1, v2}, Lcom/yandex/mobile/ads/impl/o41;->a(Ljava/lang/Object;Ljava/lang/String;)Lcom/yandex/mobile/ads/impl/vf;
+
+    move-result-object v1
+
+    const/16 v2, 0xe
+
+    new-array v2, v2, [Lcom/yandex/mobile/ads/impl/vf;
+
+    const/4 v15, 0x0
+
+    aput-object v16, v2, v15
+
+    const/4 v15, 0x1
+
+    aput-object v3, v2, v15
+
+    const/4 v3, 0x2
+
+    aput-object v4, v2, v3
+
+    const/4 v3, 0x3
+
+    aput-object v5, v2, v3
+
+    const/4 v3, 0x4
+
+    aput-object v6, v2, v3
+
+    const/4 v3, 0x5
+
+    aput-object v7, v2, v3
+
+    const/4 v3, 0x6
+
+    aput-object v8, v2, v3
+
+    const/4 v3, 0x7
+
+    aput-object v9, v2, v3
+
+    const/16 v3, 0x8
+
+    aput-object v10, v2, v3
+
+    const/16 v3, 0x9
+
+    aput-object v11, v2, v3
+
+    const/16 v3, 0xa
+
+    aput-object v12, v2, v3
+
+    const/16 v3, 0xb
+
+    aput-object v13, v2, v3
+
+    const/16 v3, 0xc
+
+    aput-object v14, v2, v3
+
+    const/16 v3, 0xd
+
+    aput-object v1, v2, v3
+
+    .line 18
+    invoke-static {v2}, Lkotlin/collections/l;->o([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    .line 19
+    invoke-static {v1}, Lkotlin/collections/l;->b0(Ljava/lang/Iterable;)Ljava/util/List;
+
+    move-result-object v1
+
+    return-object v1
+.end method

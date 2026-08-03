@@ -1,0 +1,30 @@
+.class public final synthetic Lcom/yandex/div/core/c;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/yandex/div/core/Div2ImageStubProvider;
+
+
+# direct methods
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final getImageStubDrawable(I)Landroid/graphics/drawable/Drawable;
+    .locals 1
+
+    .line 1
+    new-instance v0, Landroid/graphics/drawable/ColorDrawable;
+
+    invoke-direct {v0, p1}, Landroid/graphics/drawable/ColorDrawable;-><init>(I)V
+
+    return-object v0
+.end method

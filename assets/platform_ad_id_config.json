@@ -1,0 +1,272 @@
+{
+  "id_config": {
+    "open_admob_1111": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/8385438938",
+      "fresh_id": "ca-app-pub-6887521785290583/8385438938",
+      "desc": "open_admob:admob_bidding",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_admob_1000": {
+      "type": "full_admob",
+      "id": "ca-app-pub-6887521785290583/7243129458",
+      "fresh_id": "ca-app-pub-6887521785290583/7243129458",
+      "desc": "full_admob:admob_bidding",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_admob_10001": {
+      "type": "full_admob",
+      "id": "ca-app-pub-6887521785290583/1002074255",
+      "fresh_id": "ca-app-pub-6887521785290583/1002074255",
+      "desc": "full_admob:admob_bidding_splash",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "open_vungle_w_3.0": {
+      "id": "OPEN_VUNGLE_NEW2-1397304",
+      "type": "open_vungle",
+      "desc": "open_vungle:turbo_&global&_3.0",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "open_vungle_w_1.0": {
+      "id": "OPEN_VUNGLE_NEW1-1755769",
+      "type": "open_vungle",
+      "desc": "open_vungle:turbo_&global&_1.0",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_vungle_1_2.0": {
+      "id": "FULL_VUNGLE_FLOOR1_CONNECT__MM__VG_0726-9229691",
+      "type": "full_vungle",
+      "desc": "full_vungle:turbo_&global&_2.0",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_vungle_2_1.0": {
+      "id": "TOPFLOOR_0426_CESHI_NEW-1086648",
+      "type": "full_vungle",
+      "desc": "full_vungle:turbo_&global&_1.0",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_vungle_3_0.25": {
+      "id": "FULL_VUNGLE_FLOOR_ALL-6897442",
+      "type": "full_vungle",
+      "desc": "full_vungle:turbo_&global&_0.25",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_1": {
+      "id": "R-M-2087893-12",
+      "type": "full_yandex",
+      "desc": "full_yandex:floor1",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_2": {
+      "id": "R-M-2087893-18",
+      "type": "full_yandex",
+      "desc": "full_yandex:tongyong_floor6",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_3": {
+      "id": "R-M-2087893-13",
+      "type": "full_yandex",
+      "desc": "full_yandex:floor2",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_4": {
+      "id": "R-M-2087893-15",
+      "type": "full_yandex",
+      "desc": "full_yandex:floor3",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_5": {
+      "id": "R-M-2087893-19",
+      "type": "full_yandex",
+      "desc": "full_yandex:tongyong_floor7",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_6": {
+      "id": "R-M-2087893-14",
+      "type": "full_yandex",
+      "desc": "full_yandex:nonfloor",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_yandex_9": {
+      "id": "R-M-2087893-28",
+      "type": "full_yandex",
+      "desc": "full_turbo_yandex:splash1",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_is_1": {
+      "id": "wrz5v3tzw9zdhxms",
+      "type": "ironsource_mediation",
+      "desc": "full_is:floor1_&amp;RU&amp;",
+      "auto_reload": true,
+      "error_reload": 0,
+      "expired_time": -1
+    },
+    "full_inmobi_1": {
+      "type": "full_inmobi",
+      "id": "1663407343363",
+      "desc": "full_inmobi:floor1",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_inmobi_2": {
+      "type": "full_inmobi",
+      "id": "1665243991274",
+      "desc": "full_inmobi:floor2",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_inmobi_3": {
+      "type": "full_inmobi",
+      "id": "1664684115103",
+      "desc": "full_inmobi:floor3",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_inmobi_4": {
+      "type": "full_inmobi",
+      "id": "1661860064396",
+      "desc": "full_inmobi:floor5",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_inmobi_5": {
+      "type": "full_inmobi",
+      "id": "1656673694401",
+      "desc": "full_inmobi:nonfloor",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_1": {
+      "type": "full_bigo",
+      "id": "10172197-10071558",
+      "desc": "full_bigo:floor1",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_2": {
+      "type": "full_bigo",
+      "id": "10172197-10093095",
+      "desc": "full_bigo:floor2",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_3": {
+      "type": "full_bigo",
+      "id": "10172197-10135249",
+      "desc": "full_bigo:floor3",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_4": {
+      "type": "full_bigo",
+      "id": "10172197-10023349",
+      "desc": "full_bigo:floor4",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_5": {
+      "type": "full_bigo",
+      "id": "10172197-10170206",
+      "desc": "full_bigo:floor5",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_bigo_11": {
+      "type": "full_bigo",
+      "id": "10172197-10663476",
+      "desc": "full_bigo:splash001",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "open_bigo_1": {
+      "type": "open_bigo",
+      "id": "10172197-10830682",
+      "desc": "splash_bigo:splash001",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "full_vungle_1": {
+      "type": "full_vungle",
+      "id": "FULL_VUNGLE_ALL_0412-1435081",
+      "desc": "full_vungle:all_0412"
+    },
+    "full_home_1": {
+      "type": "full_home",
+      "id": "full_home_ad_id",
+      "desc": "full_home:full_home_ad"
+    },
+    "native_admob_1": {
+      "type": "native_admob",
+      "id": "ca-app-pub-6887521785290583/3562658418",
+      "desc": "native_admob:disconnect_all",
+      "expired_time": 60
+    },
+    "native_full_admob_1": {
+      "type": "native_admob",
+      "id": "ca-app-pub-6887521785290583/3875649600",
+      "desc": "native_admob:admob_bidding_splash",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "native_full_admob_2": {
+      "type": "native_admob",
+      "id": "ca-app-pub-6887521785290583/3725035353",
+      "desc": "native_admob:admob_bidding_return",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "native_full_bigo_1": {
+      "type": "native_full_bigo",
+      "id": "10172197-10817599",
+      "desc": "native_bigo:splash001",
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "native_adx_1": {
+      "type": "native_adx",
+      "id": "/21925273764/turbodisconnected:adx_native_floor_test",
+      "desc": "native_adx:disconnect_floor_0508",
+      "ip_sensitive": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "native_adx_2": {
+      "type": "native_adx",
+      "id": "/21925273764/turbodisconeected:adx_native_test",
+      "desc": "native_adx:disconnect_0508",
+      "ip_sensitive": true,
+      "error_reload": 1,
+      "expired_time": 60
+    },
+    "open_admob_1": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/8899435210",
+      "desc": "open_admob:open_ad_all"
+    },
+    "open_admob_2": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/2278309510",
+      "desc": "open_admob:med"
+    },
+    "open_admob_3": {
+      "type": "open_admob",
+      "id": "ca-app-pub-6887521785290583/5155754290",
+      "desc": "open_admob:low"
+    }
+  }
+}

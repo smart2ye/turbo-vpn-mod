@@ -1,0 +1,29 @@
+{
+  "search_quote": "Search",
+  "tags": [
+    {
+      "tag": "United States",
+      "keys": "us"
+    },
+    {
+      "tag": "Germany",
+      "keys": "de"
+    },
+    {
+      "tag": "🎬Netflix",
+      "keys": "netflix"
+    },
+    {
+      "tag": "🔥Youtube",
+      "keys": "youtube"
+    },
+    {
+      "tag": "Sports",
+      "keys": "fubo,espn,dazn,sport,orf,sbs,7plus"
+    },
+    {
+      "tag": "🎮PUBG",
+      "keys": "pubg"
+    }
+  ]
+}

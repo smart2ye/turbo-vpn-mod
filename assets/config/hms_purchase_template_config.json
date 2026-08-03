@@ -1,0 +1,183 @@
+{
+  "config0": {
+    "template": 0,
+    "close_btn": {
+      "pos": 1,
+      "delay_show": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.huawei",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m.huawei",
+        "price": "$59.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "equally_price": "$4.99",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "tag": "save 58%"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d.huawei",
+        "price": "$11.99",
+        "subs_period": "P1M"
+      }
+    ],
+    "purchase_desc": "Subscription info: Offer limited to one 7-day trial per user. After the trial, subscription renews automatically unless cancelled before the end of the trial. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config0_1": {
+    "template": 0,
+    "close_btn": {
+      "pos": 1,
+      "delay_show": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.huawei",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m.huawei",
+        "price": "$59.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "equally_price": "$4.99",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "tag": "save 58%"
+      }
+    ],
+    "purchase_desc": "Subscription info: Offer limited to one 7-day trial per user. After the trial, subscription renews automatically unless cancelled before the end of the trial. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config0_2": {
+    "template": 0,
+    "close_btn": {
+      "pos": 1,
+      "delay_show": 0
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.c.1m.huawei",
+        "price": "$13.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.12m.huawei",
+        "price": "$69.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "equally_price": "$5.83",
+        "equally_period": "P1M",
+        "equally_description": "month",
+        "tag": "save 58%"
+      }
+    ],
+    "purchase_desc": "Subscription info: Offer limited to one 7-day trial per user. After the trial, subscription renews automatically unless cancelled before the end of the trial. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config1": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.try7d.huawei",
+        "price": "$11.99",
+        "description": "month",
+        "subs_period": "P1M"
+      }
+    ],
+    "purchase_desc": "Subscription info: Only %s billed monthly after offer period. Offer limited to one 7-day trial per user. After the trial, subscription renews automatically unless cancelled before the end of the trial. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config1_2": {
+    "template": 1,
+    "main_title": "100% AD-free\nReliable Connection",
+    "description": "Only %s billed yearly after 7 days free trial",
+    "close_btn": {
+      "pos": 0,
+      "shield_back_press": true
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.12m.try7d.huawei",
+        "price": "$59.99",
+        "description": "year",
+        "subs_period": "P1Y"
+      }
+    ],
+    "purchase_desc": "Subscription info: Only %s billed monthly after offer period. Offer limited to one 7-day trial per user. After the trial, subscription renews automatically unless cancelled before the end of the trial. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config5_2": {
+    "template": 5,
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.12m.off75.huawei",
+        "price": "$35.99",
+        "description": "year",
+        "subs_period": "P1Y",
+        "original_price": "$59.99",
+        "tag": "60% OFF"
+      }
+    ],
+    "purchase_btn_text": "START NOW",
+    "purchase_desc": "Subscription info: Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config8": {
+    "template": 8,
+    "close_btn": {
+      "pos": 1
+    },
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.c.1m.huawei",
+        "price": "$13.99",
+        "description": "month",
+        "subs_period": "P1M"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.12m.huawei",
+        "price": "$69.99",
+        "description": "year",
+        "subs_period": "P1Y"
+      }
+    ],
+    "purchase_btn_text": "UPGRADE NOW",
+    "target_level": 30,
+    "max_bind_count": 20,
+    "purchase_desc": "Subscription info: Only %s billed monthly after offer period. Offer limited to one 7-day trial per user. After the trial, subscription renews automatically unless cancelled before the end of the trial. Subscription automatically renews unless auto-renew is turned off at least 24-hours before the end of the current period."
+  },
+  "config9_4": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.b.1m.huawei"
+      },
+      {
+        "id": "v2.turbo.a.sub.b.12m.huawei"
+      }
+    ]
+  },
+  "config9_5": {
+    "template": 9,
+    "products": [
+      {
+        "id": "v2.turbo.a.sub.c.12m.huawei"
+      },
+      {
+        "id": "v2.turbo.a.sub.c.1m.huawei"
+      }
+    ]
+  }
+}

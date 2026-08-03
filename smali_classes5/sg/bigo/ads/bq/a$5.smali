@@ -1,0 +1,64 @@
+.class final Lsg/bigo/ads/bq/a$5;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Lsg/bigo/ads/bq/c$a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lsg/bigo/ads/bq/a;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Ljava/util/concurrent/CountDownLatch;
+
+.field final synthetic b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+.field final synthetic c:Lsg/bigo/ads/bo/b;
+
+.field final synthetic d:Lsg/bigo/ads/bq/a;
+
+
+# direct methods
+.method constructor <init>(Lsg/bigo/ads/bq/a;Ljava/util/concurrent/CountDownLatch;Ljava/util/concurrent/atomic/AtomicBoolean;Lsg/bigo/ads/bo/b;)V
+    .locals 0
+
+    iput-object p1, p0, Lsg/bigo/ads/bq/a$5;->d:Lsg/bigo/ads/bq/a;
+
+    iput-object p2, p0, Lsg/bigo/ads/bq/a$5;->a:Ljava/util/concurrent/CountDownLatch;
+
+    iput-object p3, p0, Lsg/bigo/ads/bq/a$5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    iput-object p4, p0, Lsg/bigo/ads/bq/a$5;->c:Lsg/bigo/ads/bo/b;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 3
+
+    iget-object v0, p0, Lsg/bigo/ads/bq/a$5;->a:Ljava/util/concurrent/CountDownLatch;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
+
+    iget-object v0, p0, Lsg/bigo/ads/bq/a$5;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
+
+    return-void
+.end method

@@ -1,0 +1,24 @@
+.class public interface abstract Lcom/yandex/div/evaluable/internal/Token$Operator$Binary$Logical;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/yandex/div/evaluable/internal/Token$Operator$Binary;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/yandex/div/evaluable/internal/Token$Operator$Binary;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "Logical"
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/yandex/div/evaluable/internal/Token$Operator$Binary$Logical$And;,
+        Lcom/yandex/div/evaluable/internal/Token$Operator$Binary$Logical$Or;
+    }
+.end annotation

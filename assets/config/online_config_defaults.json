@@ -1,0 +1,83 @@
+{
+  "ad_load_error_limits": {
+    "admob": {
+      "lock_secs_no_fill": 10,
+      "lock_secs_internal_error": 2
+    }
+  },
+  "drop_p2p": {
+    "include_vip": false,
+    "enable_ipsec": true,
+    "udp": [
+      15000,
+      65535
+    ],
+    "tcp": [
+      15000,
+      65535
+    ]
+  },
+  "ping_config": {
+    "reconnect": true
+  },
+  "admob_native_ad_ban_config": {
+    "ban_sdk_versions": [
+      21,
+      22
+    ],
+    "excluded_brands": [
+      "samsung",
+      "google",
+      "xiaomi",
+      "redmi",
+      "sony",
+      "lge"
+    ]
+  },
+  "admob_full_ad_ban_reload_config": {
+    "ban_sdk_versions": [
+      21,
+      22,
+      23,
+      26
+    ],
+    "ban_models": [
+      "SM-G5",
+      "SM-J",
+      "SM-A3"
+    ]
+  },
+  "rate_config": {
+    "general": {
+      "least_star_rate": 5,
+      "prior_rate_guide_times": 1,
+      "drawer_rate_us": false,
+      "show_return_app_rate_card": true
+    }
+  },
+  "proxy_bypass_config": {
+    "disable_countries": ["QA"]
+  },
+  "disable_strongswan_config": {
+    "user_groups": [
+      "ae_etisalat.ae"
+    ]
+  },
+  "reinstall_config": {
+    "ad_show_range": {
+      "min_hours": 0
+    }
+  },
+  "open_ad_config": {
+    "intercept_back_btn": true,
+    "intercept_millis": 2000
+  },
+  "test_ping_config": {
+    "ipsec_original_pings": [0, 100, 300, 500, 800, 1000, 1300, 1500, 1800, 2000, 2500],
+    "ipsec_weighted_pings": [10, 20, 30, 40, 50, 65, 80, 95, 105, 130, 150],
+    "ov_plugin_original_pings": [0, 100, 300, 500, 800, 1000, 1300, 1500, 1800, 2000, 2500],
+    "ov_plugin_weighted_pings": [10, 20, 30, 40, 50, 65, 80, 95, 105, 130, 150]
+  },
+  "refresh_servers_config": {"foreground":{"refresh_interval":5}},
+  "via_channel": "getapps"
+}

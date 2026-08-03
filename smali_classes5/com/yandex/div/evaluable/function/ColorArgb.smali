@@ -1,0 +1,481 @@
+.class public final Lcom/yandex/div/evaluable/function/ColorArgb;
+.super Lcom/yandex/div/evaluable/Function;
+.source "SourceFile"
+
+
+# static fields
+.field public static final INSTANCE:Lcom/yandex/div/evaluable/function/ColorArgb;
+
+.field private static final declaredArgs:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/yandex/div/evaluable/FunctionArgument;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static final isPure:Z
+
+.field private static final name:Ljava/lang/String;
+
+.field private static final resultType:Lcom/yandex/div/evaluable/EvaluableType;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 8
+
+    .line 1
+    new-instance v0, Lcom/yandex/div/evaluable/function/ColorArgb;
+
+    .line 2
+    .line 3
+    invoke-direct {v0}, Lcom/yandex/div/evaluable/function/ColorArgb;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    sput-object v0, Lcom/yandex/div/evaluable/function/ColorArgb;->INSTANCE:Lcom/yandex/div/evaluable/function/ColorArgb;
+
+    .line 7
+    .line 8
+    const-string v0, "argb"
+
+    .line 9
+    .line 10
+    sput-object v0, Lcom/yandex/div/evaluable/function/ColorArgb;->name:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    new-instance v0, Lcom/yandex/div/evaluable/FunctionArgument;
+
+    .line 13
+    .line 14
+    sget-object v1, Lcom/yandex/div/evaluable/EvaluableType;->NUMBER:Lcom/yandex/div/evaluable/EvaluableType;
+
+    .line 15
+    .line 16
+    const/4 v2, 0x0
+
+    .line 17
+    const/4 v3, 0x2
+
+    .line 18
+    const/4 v4, 0x0
+
+    .line 19
+    invoke-direct {v0, v1, v2, v3, v4}, Lcom/yandex/div/evaluable/FunctionArgument;-><init>(Lcom/yandex/div/evaluable/EvaluableType;ZILkotlin/jvm/internal/i;)V
+
+    .line 20
+    .line 21
+    .line 22
+    new-instance v5, Lcom/yandex/div/evaluable/FunctionArgument;
+
+    .line 23
+    .line 24
+    invoke-direct {v5, v1, v2, v3, v4}, Lcom/yandex/div/evaluable/FunctionArgument;-><init>(Lcom/yandex/div/evaluable/EvaluableType;ZILkotlin/jvm/internal/i;)V
+
+    .line 25
+    .line 26
+    .line 27
+    new-instance v6, Lcom/yandex/div/evaluable/FunctionArgument;
+
+    .line 28
+    .line 29
+    invoke-direct {v6, v1, v2, v3, v4}, Lcom/yandex/div/evaluable/FunctionArgument;-><init>(Lcom/yandex/div/evaluable/EvaluableType;ZILkotlin/jvm/internal/i;)V
+
+    .line 30
+    .line 31
+    .line 32
+    new-instance v7, Lcom/yandex/div/evaluable/FunctionArgument;
+
+    .line 33
+    .line 34
+    invoke-direct {v7, v1, v2, v3, v4}, Lcom/yandex/div/evaluable/FunctionArgument;-><init>(Lcom/yandex/div/evaluable/EvaluableType;ZILkotlin/jvm/internal/i;)V
+
+    .line 35
+    .line 36
+    .line 37
+    const/4 v1, 0x4
+
+    .line 38
+    new-array v1, v1, [Lcom/yandex/div/evaluable/FunctionArgument;
+
+    .line 39
+    .line 40
+    aput-object v0, v1, v2
+
+    .line 41
+    .line 42
+    const/4 v0, 0x1
+
+    .line 43
+    aput-object v5, v1, v0
+
+    .line 44
+    .line 45
+    aput-object v6, v1, v3
+
+    .line 46
+    .line 47
+    const/4 v2, 0x3
+
+    .line 48
+    aput-object v7, v1, v2
+
+    .line 49
+    .line 50
+    invoke-static {v1}, Lkotlin/collections/l;->o([Ljava/lang/Object;)Ljava/util/List;
+
+    .line 51
+    .line 52
+    .line 53
+    move-result-object v1
+
+    .line 54
+    sput-object v1, Lcom/yandex/div/evaluable/function/ColorArgb;->declaredArgs:Ljava/util/List;
+
+    .line 55
+    .line 56
+    sget-object v1, Lcom/yandex/div/evaluable/EvaluableType;->COLOR:Lcom/yandex/div/evaluable/EvaluableType;
+
+    .line 57
+    .line 58
+    sput-object v1, Lcom/yandex/div/evaluable/function/ColorArgb;->resultType:Lcom/yandex/div/evaluable/EvaluableType;
+
+    .line 59
+    .line 60
+    sput-boolean v0, Lcom/yandex/div/evaluable/function/ColorArgb;->isPure:Z
+
+    .line 61
+    .line 62
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/yandex/div/evaluable/Function;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+
+# virtual methods
+.method protected evaluate-ex6DHhM(Lcom/yandex/div/evaluable/EvaluationContext;Lcom/yandex/div/evaluable/Evaluable;Ljava/util/List;)Ljava/lang/Object;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/yandex/div/evaluable/EvaluationContext;",
+            "Lcom/yandex/div/evaluable/Evaluable;",
+            "Ljava/util/List<",
+            "+",
+            "Ljava/lang/Object;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    .line 1
+    const-string v0, "null cannot be cast to non-null type kotlin.Double"
+
+    .line 2
+    .line 3
+    const-string v1, "evaluationContext"
+
+    .line 4
+    .line 5
+    invoke-static {p1, v1}, Lkotlin/jvm/internal/p;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    .line 7
+    .line 8
+    const-string p1, "expressionContext"
+
+    .line 9
+    .line 10
+    invoke-static {p2, p1}, Lkotlin/jvm/internal/p;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 11
+    .line 12
+    .line 13
+    const-string p1, "args"
+
+    .line 14
+    .line 15
+    invoke-static {p3, p1}, Lkotlin/jvm/internal/p;->i(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 16
+    .line 17
+    .line 18
+    const/4 p1, 0x0
+
+    .line 19
+    :try_start_0
+    invoke-interface {p3, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 20
+    .line 21
+    .line 22
+    move-result-object p1
+
+    .line 23
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 24
+    .line 25
+    .line 26
+    check-cast p1, Ljava/lang/Double;
+
+    .line 27
+    .line 28
+    invoke-virtual {p1}, Ljava/lang/Double;->doubleValue()D
+
+    .line 29
+    .line 30
+    .line 31
+    move-result-wide p1
+
+    .line 32
+    invoke-static {p1, p2}, Lcom/yandex/div/evaluable/function/ColorFunctionsKt;->toColorIntComponentValue(D)I
+
+    .line 33
+    .line 34
+    .line 35
+    move-result p1
+
+    .line 36
+    const/4 p2, 0x1
+
+    .line 37
+    invoke-interface {p3, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 38
+    .line 39
+    .line 40
+    move-result-object p2
+
+    .line 41
+    invoke-static {p2, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 42
+    .line 43
+    .line 44
+    check-cast p2, Ljava/lang/Double;
+
+    .line 45
+    .line 46
+    invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
+
+    .line 47
+    .line 48
+    .line 49
+    move-result-wide v1
+
+    .line 50
+    invoke-static {v1, v2}, Lcom/yandex/div/evaluable/function/ColorFunctionsKt;->toColorIntComponentValue(D)I
+
+    .line 51
+    .line 52
+    .line 53
+    move-result p2
+
+    .line 54
+    const/4 v1, 0x2
+
+    .line 55
+    invoke-interface {p3, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 56
+    .line 57
+    .line 58
+    move-result-object v1
+
+    .line 59
+    invoke-static {v1, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 60
+    .line 61
+    .line 62
+    check-cast v1, Ljava/lang/Double;
+
+    .line 63
+    .line 64
+    invoke-virtual {v1}, Ljava/lang/Double;->doubleValue()D
+
+    .line 65
+    .line 66
+    .line 67
+    move-result-wide v1
+
+    .line 68
+    invoke-static {v1, v2}, Lcom/yandex/div/evaluable/function/ColorFunctionsKt;->toColorIntComponentValue(D)I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v1
+
+    .line 72
+    const/4 v2, 0x3
+
+    .line 73
+    invoke-interface {p3, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    .line 74
+    .line 75
+    .line 76
+    move-result-object v2
+
+    .line 77
+    invoke-static {v2, v0}, Lkotlin/jvm/internal/p;->g(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 78
+    .line 79
+    .line 80
+    check-cast v2, Ljava/lang/Double;
+
+    .line 81
+    .line 82
+    invoke-virtual {v2}, Ljava/lang/Double;->doubleValue()D
+
+    .line 83
+    .line 84
+    .line 85
+    move-result-wide v2
+
+    .line 86
+    invoke-static {v2, v3}, Lcom/yandex/div/evaluable/function/ColorFunctionsKt;->toColorIntComponentValue(D)I
+
+    .line 87
+    .line 88
+    .line 89
+    move-result v0
+
+    .line 90
+    sget-object v2, Lcom/yandex/div/evaluable/types/Color;->Companion:Lcom/yandex/div/evaluable/types/Color$Companion;
+
+    .line 91
+    .line 92
+    invoke-virtual {v2, p1, p2, v1, v0}, Lcom/yandex/div/evaluable/types/Color$Companion;->argb-H0kstlE(IIII)I
+
+    .line 93
+    .line 94
+    .line 95
+    move-result p1
+    :try_end_0
+    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+
+    .line 96
+    invoke-static {p1}, Lcom/yandex/div/evaluable/types/Color;->box-impl(I)Lcom/yandex/div/evaluable/types/Color;
+
+    .line 97
+    .line 98
+    .line 99
+    move-result-object p1
+
+    .line 100
+    return-object p1
+
+    .line 101
+    :catch_0
+    invoke-virtual {p0}, Lcom/yandex/div/evaluable/function/ColorArgb;->getName()Ljava/lang/String;
+
+    .line 102
+    .line 103
+    .line 104
+    move-result-object v0
+
+    .line 105
+    const/16 v4, 0x8
+
+    .line 106
+    .line 107
+    const/4 v5, 0x0
+
+    .line 108
+    const-string v2, "Value out of range 0..1."
+
+    .line 109
+    .line 110
+    const/4 v3, 0x0
+
+    .line 111
+    move-object v1, p3
+
+    .line 112
+    invoke-static/range {v0 .. v5}, Lcom/yandex/div/evaluable/EvaluableExceptionKt;->throwExceptionOnFunctionEvaluationFailed$default(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljava/lang/Exception;ILjava/lang/Object;)Ljava/lang/Void;
+
+    .line 113
+    .line 114
+    .line 115
+    new-instance p1, Lkotlin/KotlinNothingValueException;
+
+    .line 116
+    .line 117
+    invoke-direct {p1}, Lkotlin/KotlinNothingValueException;-><init>()V
+
+    .line 118
+    .line 119
+    .line 120
+    throw p1
+.end method
+
+.method public getDeclaredArgs()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Lcom/yandex/div/evaluable/FunctionArgument;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget-object v0, Lcom/yandex/div/evaluable/function/ColorArgb;->declaredArgs:Ljava/util/List;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getName()Ljava/lang/String;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/yandex/div/evaluable/function/ColorArgb;->name:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public getResultType()Lcom/yandex/div/evaluable/EvaluableType;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/yandex/div/evaluable/function/ColorArgb;->resultType:Lcom/yandex/div/evaluable/EvaluableType;
+
+    .line 2
+    .line 3
+    return-object v0
+.end method
+
+.method public isPure()Z
+    .locals 1
+
+    .line 1
+    sget-boolean v0, Lcom/yandex/div/evaluable/function/ColorArgb;->isPure:Z
+
+    .line 2
+    .line 3
+    return v0
+.end method
