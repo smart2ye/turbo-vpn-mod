@@ -20,50 +20,41 @@ jobs:
           java-version: '17'
 
       - name: Install Apktool
+        run: sudo apt update && sudo apt install -y apktool
+
+      - name: Aggressive cleanup of problematic resources
         run: |
-          sudo apt update
-          sudo apt install -y apktool
+          # 1. حذف جميع المجلدات الفرعية للـ layout و drawable (ما عدا الرئيسية)
+          find res/ -maxdepth 1 -type d \( -name "layout-*" -o -name "drawable-*" \) -exec rm -rf {} + || true
 
-      - name: Clean all problematic resource files
+          # 2. حذف أي ملف يحتوي على $ في اسمه
+          find res/ -type f -name "*\$*.xml" -delete || true
+
+          # 3. حذف ids.xml و public.xml
+          rm -f res/values/ids.xml res/values/public.xml || true
+
+          # 4. حذف جميع ملفات tp_* و zab_* و sub_* و layout_subs_* (مرتبطة بإعلانات واشتراكات)
+          find res/layout -type f \( -name "tp_*.xml" -o -name "zab_*.xml" -o -name "sub_*.xml" -o -name "layout_subs_*.xml" \) -delete || true
+          find res/drawable -type f \( -name "tp_*.xml" -o -name "zab_*.xml" -o -name "sub_*.xml" -o -name "layout_subs_*.xml" \) -delete || true
+          find res/menu -type f \( -name "tp_*.xml" -o -name "zab_*.xml" -o -name "sub_*.xml" -o -name "layout_subs_*.xml" \) -delete || true
+
+          # 5. حذف ملفات material, mtrl, notification (من مكتبات Material Design والإشعارات)
+          find res/layout -type f -name "material_*.xml" -delete || true
+          find res/layout -type f -name "mtrl_*.xml" -delete || true
+          find res/layout -type f -name "notification_*.xml" -delete || true
+          find res/drawable -type f -name "material_*.xml" -delete || true
+          find res/drawable -type f -name "mtrl_*.xml" -delete || true
+          find res/drawable -type f -name "notification_*.xml" -delete || true
+
+          # 6. حذف ملفات server_list_* (تخطيطات قائمة الخوادم التي قد تسبب أخطاء)
+          find res/layout -type f -name "server_list_*.xml" -delete || true
+          find res/layout -type f -name "layout_vpn_notification.xml" -delete || true
+
+          echo "✅ تم التنظيف الشامل لجميع الموارد المسببة للمشاكل"
+
+      - name: Build APK with aggressive cleanup
         run: |
-          # 1. حذف جميع ملفات $ من أي مجلد
-          find res/ -type f -name "*\$*.xml" -delete
-
-          # 2. حذف ids.xml (يحتوي على علامات <id> غير مسموحة)
-          rm -f res/values/ids.xml
-
-          # 3. حذف public.xml (إن وجد)
-          rm -f res/values/public.xml
-
-          # 4. حذف تعارض ic_launcher (XML يتعارض مع PNG)
-          rm -f res/mipmap-anydpi-v26/ic_launcher.xml
-
-          # 5. حذف جميع ملفات add_dns_* و always_on_* (مرتبطة بإعدادات DNS)
-          find res/drawable -type f -name "add_dns_*.xml" -delete 2>/dev/null || true
-          find res/drawable -type f -name "always_on_step*.xml" -delete 2>/dev/null || true
-
-          # 6. حذف جميع ملفات zs_* و zui_* (مرتبطة بـ Zendesk والدعم الفني)
-          find res/layout -type f -name "zs_*.xml" -delete 2>/dev/null || true
-          find res/layout -type f -name "zui_*.xml" -delete 2>/dev/null || true
-          find res/drawable -type f -name "zs_*.xml" -delete 2>/dev/null || true
-          find res/drawable -type f -name "zui_*.xml" -delete 2>/dev/null || true
-          find res/menu -type f -name "zs_*.xml" -delete 2>/dev/null || true
-          find res/menu -type f -name "zui_*.xml" -delete 2>/dev/null || true
-
-          # 7. حذف ملفات avd_* (رسوم متحركة لكلمات المرور - غير ضرورية)
-          find res/drawable -type f -name "avd_*.xml" -delete 2>/dev/null || true
-
-          # 8. حذف ملفات design_password_eye (مرتبطة بإظهار كلمة المرور)
-          rm -f res/drawable/design_password_eye.xml 2>/dev/null || true
-
-          # 9. حذف ملفات abc_btn_* (قد تسبب تعارضات)
-          find res/drawable -type f -name "abc_btn_*.xml" -delete 2>/dev/null || true
-
-          echo "✅ تم تنظيف جميع الموارد المسببة للمشاكل"
-
-      - name: Build APK
-        run: |
-          apktool b . -o app-unsigned.apk -f
+          apktool b . -o app-unsigned.apk -f --no-crunch
 
       - name: Sign APK
         run: |
