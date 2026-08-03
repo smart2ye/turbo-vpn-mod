@@ -1,0 +1,45 @@
+name: Build Turbo VPN Mod
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Install Apktool
+        run: |
+          sudo apt update
+          sudo apt install -y apktool
+
+      - name: Clean and build APK
+        run: |
+          # حذف public.xml إن وجد (لتجنب أخطاء الموارد)
+          rm -f res/values/public.xml || true
+          # محاولة التجميع
+          apktool b . -o app-unsigned.apk -f || apktool b . -o app-unsigned.apk --no-crunch
+
+      - name: Sign APK
+        run: |
+          keytool -genkey -v -keystore my.keystore -alias mykey -keyalg RSA -keysize 2048 -validity 10000 \
+            -storepass 123456 -keypass 123456 -dname "CN=VPN"
+          apksigner sign --ks my.keystore --ks-pass pass:123456 --key-pass pass:123456 app-unsigned.apk
+          mv app-unsigned.apk turbo_vpn_mod.apk
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: TurboVPN-Mod
+          path: turbo_vpn_mod.apk
