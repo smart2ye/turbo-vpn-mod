@@ -24,25 +24,16 @@ jobs:
           sudo apt update
           sudo apt install -y apktool
 
-      - name: Clean all problematic resource files
+      - name: Clean problematic layout files
         run: |
-          # حذف جميع ملفات ic_launcher (XML و PNG) من كل مجلدات mipmap
-          find res/ -type f \( -name "ic_launcher.xml" -o -name "ic_launcher.png" -o -name "ic_launcher_round.xml" -o -name "ic_launcher_round.png" \) -delete
-
-          # حذف ids.xml و public.xml
-          rm -f res/values/ids.xml res/values/public.xml
-
-          # حذف جميع الملفات التي تحتوي على $ في اسمها (أسماء غير صالحة)
-          find res/drawable -type f -name '*\$*.xml' -delete 2>/dev/null || true
-          find res/drawable-* -type f -name '*\$*.xml' -delete 2>/dev/null || true
-
-          # حذف أي ملفات أخرى غير مرغوب فيها
-          find res/ -type f \( -name "add_dns_*.xml" -o -name "always_on_step*.xml" -o -name "zs_*.xml" -o -name "zui_*.xml" -o -name "avd_*.xml" -o -name "design_password_eye.xml" -o -name "abc_btn_*.xml" \) -delete 2>/dev/null || true
-
-          # حذف المجلدات الفارغة
-          find res/ -type d -empty -delete 2>/dev/null || true
-
-          echo "✅ تم تنظيف جميع الموارد المسببة للمشاكل"
+          # حذف ملفات الـ layout التي تسبب أخطاء مراجع غير موجودة
+          rm -f res/layout/sub_active_template_2.xml
+          rm -f res/layout/test_action_chip.xml
+          rm -f res/layout/test_design_checkbox.xml
+          rm -f res/layout/test_navigation_bar_item_layout.xml
+          # حذف أي ملفات أخرى تحوي "test" في الاسم (غالباً اختبارية)
+          find res/layout -type f -name "*test*.xml" -delete 2>/dev/null || true
+          echo "✅ تم حذف ملفات الـ layout المخالفة"
 
       - name: Build APK
         run: |
