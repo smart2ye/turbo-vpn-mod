@@ -24,16 +24,17 @@ jobs:
           sudo apt update
           sudo apt install -y apktool
 
-      - name: Clean problematic layout files
+      - name: Remove all problematic files in one go
         run: |
-          # حذف ملفات الـ layout التي تسبب أخطاء مراجع غير موجودة
-          rm -f res/layout/sub_active_template_2.xml
-          rm -f res/layout/test_action_chip.xml
-          rm -f res/layout/test_design_checkbox.xml
-          rm -f res/layout/test_navigation_bar_item_layout.xml
-          # حذف أي ملفات أخرى تحوي "test" في الاسم (غالباً اختبارية)
-          find res/layout -type f -name "*test*.xml" -delete 2>/dev/null || true
-          echo "✅ تم حذف ملفات الـ layout المخالفة"
+          # 1. حذف جميع ملفات drawable التي تحتوي على $ في الاسم
+          find res/drawable* -type f -name '*\$*.xml' -delete 2>/dev/null || true
+          # 2. حذف ملفات ic_launcher من mipmap
+          find res/mipmap* -type f -name 'ic_launcher*.xml' -delete 2>/dev/null || true
+          # 3. حذف ids.xml و public.xml
+          rm -f res/values/ids.xml res/values/public.xml
+          # 4. حذف أي ملفات layout اختبارية
+          find res/layout -type f -name '*test*.xml' -delete 2>/dev/null || true
+          echo "✅ تم حذف جميع الموارد المخالفة"
 
       - name: Build APK
         run: |
