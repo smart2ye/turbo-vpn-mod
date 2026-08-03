@@ -20,46 +20,25 @@ jobs:
           java-version: '17'
 
       - name: Install Apktool
-        run: sudo apt update && sudo apt install -y apktool
-
-      - name: Aggressive cleanup of problematic resources
         run: |
-          # 1. حذف جميع المجلدات الفرعية للـ layout و drawable (ما عدا الرئيسية)
-          find res/ -maxdepth 1 -type d \( -name "layout-*" -o -name "drawable-*" \) -exec rm -rf {} + || true
+          sudo apt update
+          sudo apt install -y apktool
 
-          # 2. حذف أي ملف يحتوي على $ في اسمه
-          find res/ -type f -name "*\$*.xml" -delete || true
+      - name: Clean all problematic resource files
+        run: |
+          find res/ -type f \( -name "ic_launcher.xml" -o -name "ic_launcher.png" -o -name "ic_launcher_round.xml" -o -name "ic_launcher_round.png" \) -delete
+          rm -f res/values/ids.xml res/values/public.xml
+          find res/ -type f \( -name "add_dns_*.xml" -o -name "always_on_step*.xml" -o -name "zs_*.xml" -o -name "zui_*.xml" -o -name "avd_*.xml" -o -name "design_password_eye.xml" -o -name "abc_btn_*.xml" \) -delete 2>/dev/null || true
+          find res/ -type d -empty -delete 2>/dev/null || true
+          echo "✅ تم التنظيف"
 
-          # 3. حذف ids.xml و public.xml
-          rm -f res/values/ids.xml res/values/public.xml || true
-
-          # 4. حذف جميع ملفات tp_* و zab_* و sub_* و layout_subs_* (مرتبطة بإعلانات واشتراكات)
-          find res/layout -type f \( -name "tp_*.xml" -o -name "zab_*.xml" -o -name "sub_*.xml" -o -name "layout_subs_*.xml" \) -delete || true
-          find res/drawable -type f \( -name "tp_*.xml" -o -name "zab_*.xml" -o -name "sub_*.xml" -o -name "layout_subs_*.xml" \) -delete || true
-          find res/menu -type f \( -name "tp_*.xml" -o -name "zab_*.xml" -o -name "sub_*.xml" -o -name "layout_subs_*.xml" \) -delete || true
-
-          # 5. حذف ملفات material, mtrl, notification (من مكتبات Material Design والإشعارات)
-          find res/layout -type f -name "material_*.xml" -delete || true
-          find res/layout -type f -name "mtrl_*.xml" -delete || true
-          find res/layout -type f -name "notification_*.xml" -delete || true
-          find res/drawable -type f -name "material_*.xml" -delete || true
-          find res/drawable -type f -name "mtrl_*.xml" -delete || true
-          find res/drawable -type f -name "notification_*.xml" -delete || true
-
-          # 6. حذف ملفات server_list_* (تخطيطات قائمة الخوادم التي قد تسبب أخطاء)
-          find res/layout -type f -name "server_list_*.xml" -delete || true
-          find res/layout -type f -name "layout_vpn_notification.xml" -delete || true
-
-          echo "✅ تم التنظيف الشامل لجميع الموارد المسببة للمشاكل"
-
-      - name: Build APK with aggressive cleanup
+      - name: Build APK
         run: |
           apktool b . -o app-unsigned.apk -f --no-crunch
 
       - name: Sign APK
         run: |
-          keytool -genkey -v -keystore my.keystore -alias mykey -keyalg RSA -keysize 2048 -validity 10000 \
-            -storepass 123456 -keypass 123456 -dname "CN=VPN"
+          keytool -genkey -v -keystore my.keystore -alias mykey -keyalg RSA -keysize 2048 -validity 10000 -storepass 123456 -keypass 123456 -dname "CN=VPN"
           apksigner sign --ks my.keystore --ks-pass pass:123456 --key-pass pass:123456 app-unsigned.apk
           mv app-unsigned.apk turbo_vpn_mod.apk
 
