@@ -1,0 +1,121 @@
+.class public final Lcom/chartboost/sdk/impl/h9$b;
+.super Lkotlin/jvm/internal/Lambda;
+.source "SourceFile"
+
+# interfaces
+.implements Lm5/a;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/chartboost/sdk/impl/h9;->a(Lcom/chartboost/sdk/ads/Rewarded;Lcom/chartboost/sdk/callbacks/RewardedCallback;Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lm5/a;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic b:Lcom/chartboost/sdk/callbacks/RewardedCallback;
+
+.field public final synthetic c:Lcom/chartboost/sdk/ads/Rewarded;
+
+
+# direct methods
+.method public constructor <init>(Lcom/chartboost/sdk/callbacks/RewardedCallback;Lcom/chartboost/sdk/ads/Rewarded;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/chartboost/sdk/impl/h9$b;->b:Lcom/chartboost/sdk/callbacks/RewardedCallback;
+
+    .line 2
+    .line 3
+    iput-object p2, p0, Lcom/chartboost/sdk/impl/h9$b;->c:Lcom/chartboost/sdk/ads/Rewarded;
+
+    .line 4
+    .line 5
+    const/4 p1, 0x0
+
+    .line 6
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    .line 7
+    .line 8
+    .line 9
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lcom/chartboost/sdk/impl/h9$b;->b:Lcom/chartboost/sdk/callbacks/RewardedCallback;
+
+    .line 2
+    .line 3
+    new-instance v1, Lcom/chartboost/sdk/events/CacheEvent;
+
+    .line 4
+    .line 5
+    iget-object v2, p0, Lcom/chartboost/sdk/impl/h9$b;->c:Lcom/chartboost/sdk/ads/Rewarded;
+
+    .line 6
+    .line 7
+    const/4 v3, 0x0
+
+    .line 8
+    invoke-direct {v1, v3, v2}, Lcom/chartboost/sdk/events/CacheEvent;-><init>(Ljava/lang/String;Lcom/chartboost/sdk/ads/Ad;)V
+
+    .line 9
+    .line 10
+    .line 11
+    new-instance v2, Lcom/chartboost/sdk/events/CacheError;
+
+    .line 12
+    .line 13
+    sget-object v4, Lcom/chartboost/sdk/events/CacheError$Code;->SESSION_NOT_STARTED:Lcom/chartboost/sdk/events/CacheError$Code;
+
+    .line 14
+    .line 15
+    const/4 v5, 0x2
+
+    .line 16
+    invoke-direct {v2, v4, v3, v5, v3}, Lcom/chartboost/sdk/events/CacheError;-><init>(Lcom/chartboost/sdk/events/CacheError$Code;Ljava/lang/Exception;ILkotlin/jvm/internal/i;)V
+
+    .line 17
+    .line 18
+    .line 19
+    invoke-interface {v0, v1, v2}, Lcom/chartboost/sdk/callbacks/AdCallback;->onAdLoaded(Lcom/chartboost/sdk/events/CacheEvent;Lcom/chartboost/sdk/events/CacheError;)V
+
+    .line 20
+    .line 21
+    .line 22
+    return-void
+.end method
+
+.method public bridge synthetic invoke()Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/chartboost/sdk/impl/h9$b;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    sget-object v0, LZ4/r;->a:LZ4/r;
+
+    .line 5
+    .line 6
+    return-object v0
+.end method

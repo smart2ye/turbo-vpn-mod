@@ -1,0 +1,21 @@
+.class public interface abstract Lcom/monetrix/adsdk/Monetrix$InitListener;
+.super Ljava/lang/Object;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/monetrix/adsdk/Monetrix;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x609
+    name = "InitListener"
+.end annotation
+
+
+# virtual methods
+.method public abstract onInitFail(ILjava/lang/String;)V
+.end method
+
+.method public abstract onInitSuccess()V
+.end method

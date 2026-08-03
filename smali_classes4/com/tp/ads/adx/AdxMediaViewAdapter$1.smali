@@ -1,0 +1,81 @@
+.class Lcom/tp/ads/adx/AdxMediaViewAdapter$1;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/tradplus/ads/base/adapter/TPInitMediation$InitCallback;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/tp/ads/adx/AdxMediaViewAdapter;->loadCustomAd(Landroid/content/Context;Ljava/util/Map;Ljava/util/Map;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x1
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/tp/ads/adx/AdxMediaViewAdapter;
+
+.field final synthetic val$tpParams:Ljava/util/Map;
+
+.field final synthetic val$userParams:Ljava/util/Map;
+
+
+# direct methods
+.method public constructor <init>(Lcom/tp/ads/adx/AdxMediaViewAdapter;Ljava/util/Map;Ljava/util/Map;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->this$0:Lcom/tp/ads/adx/AdxMediaViewAdapter;
+
+    iput-object p2, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->val$tpParams:Ljava/util/Map;
+
+    iput-object p3, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->val$userParams:Ljava/util/Map;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onFailed(Ljava/lang/String;Ljava/lang/String;)V
+    .locals 1
+
+    iget-object p1, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->this$0:Lcom/tp/ads/adx/AdxMediaViewAdapter;
+
+    iget-object p1, p1, Lcom/tradplus/ads/base/adapter/TPBaseAdapter;->mLoadAdapterListener:Lcom/tradplus/ads/base/adapter/TPLoadAdapterListener;
+
+    if-eqz p1, :cond_0
+
+    new-instance v0, Lcom/tradplus/ads/base/common/TPError;
+
+    invoke-direct {v0, p2}, Lcom/tradplus/ads/base/common/TPError;-><init>(Ljava/lang/String;)V
+
+    invoke-interface {p1, v0}, Lcom/tradplus/ads/base/adapter/TPLoadAdapterListener;->loadAdapterLoadFailed(Lcom/tradplus/ads/base/common/TPError;)V
+
+    :cond_0
+    return-void
+.end method
+
+.method public onSuccess()V
+    .locals 3
+
+    iget-object v0, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->this$0:Lcom/tp/ads/adx/AdxMediaViewAdapter;
+
+    iget-object v1, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->val$tpParams:Ljava/util/Map;
+
+    iget-object v2, p0, Lcom/tp/ads/adx/AdxMediaViewAdapter$1;->val$userParams:Ljava/util/Map;
+
+    invoke-static {v0, v1, v2}, Lcom/tp/ads/adx/AdxMediaViewAdapter;->access$000(Lcom/tp/ads/adx/AdxMediaViewAdapter;Ljava/util/Map;Ljava/util/Map;)V
+
+    return-void
+.end method

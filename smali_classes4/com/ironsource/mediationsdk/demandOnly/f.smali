@@ -1,0 +1,502 @@
+.class public Lcom/ironsource/mediationsdk/demandOnly/f;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/ironsource/mediationsdk/demandOnly/i$b;
+
+
+# instance fields
+.field private final a:Lcom/ironsource/ta;
+
+.field private final b:Lj$/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lj$/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/String;",
+            "Lcom/ironsource/mediationsdk/demandOnly/g;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final c:Lcom/ironsource/ug;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lcom/ironsource/ug<",
+            "Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/List;Lcom/ironsource/uj;Lcom/ironsource/mediationsdk/c;Lcom/ironsource/ug;Ljava/lang/String;Ljava/lang/String;Lcom/ironsource/ta;)V
+    .locals 13
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/ironsource/mediationsdk/model/NetworkSettings;",
+            ">;",
+            "Lcom/ironsource/uj;",
+            "Lcom/ironsource/mediationsdk/c;",
+            "Lcom/ironsource/ug<",
+            "Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;",
+            ">;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Lcom/ironsource/ta;",
+            ")V"
+        }
+    .end annotation
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    invoke-static {}, Lcom/ironsource/mediationsdk/utils/IronSourceUtils;->getSessionId()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p2}, Lcom/ironsource/uj;->j()Z
+
+    move-result v1
+
+    new-instance v2, Lcom/ironsource/mediationsdk/f;
+
+    invoke-virtual {p2}, Lcom/ironsource/uj;->g()Lcom/ironsource/o5;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3, v0}, Lcom/ironsource/mediationsdk/f;-><init>(Lcom/ironsource/o5;Ljava/lang/String;)V
+
+    new-instance v0, Lj$/util/concurrent/ConcurrentHashMap;
+
+    invoke-direct {v0}, Lj$/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    iput-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->b:Lj$/util/concurrent/ConcurrentHashMap;
+
+    move-object/from16 v0, p7
+
+    iput-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->a:Lcom/ironsource/ta;
+
+    move-object/from16 v0, p4
+
+    iput-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->c:Lcom/ironsource/ug;
+
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :cond_0
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lcom/ironsource/mediationsdk/model/NetworkSettings;
+
+    invoke-virtual {v6}, Lcom/ironsource/mediationsdk/model/NetworkSettings;->isIronSource()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    invoke-virtual {v6}, Lcom/ironsource/mediationsdk/model/NetworkSettings;->getInterstitialSettings()Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    const/4 v3, 0x1
+
+    move-object/from16 v12, p3
+
+    invoke-virtual {v12, v6, v0, v3}, Lcom/ironsource/mediationsdk/c;->a(Lcom/ironsource/mediationsdk/model/NetworkSettings;Lorg/json/JSONObject;Z)Lcom/ironsource/mediationsdk/AbstractAdapter;
+
+    move-result-object v10
+
+    if-eqz v10, :cond_0
+
+    new-instance v3, Lcom/ironsource/mediationsdk/demandOnly/g;
+
+    iget-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->c:Lcom/ironsource/ug;
+
+    invoke-virtual {v6}, Lcom/ironsource/mediationsdk/model/NetworkSettings;->getSubProviderId()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-interface {v0, v4}, Lcom/ironsource/ug;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;
+
+    invoke-virtual {p2}, Lcom/ironsource/uj;->e()J
+
+    move-result-wide v8
+
+    new-instance v11, Lcom/ironsource/mediationsdk/e;
+
+    invoke-direct {v11, v2}, Lcom/ironsource/mediationsdk/e;-><init>(Lcom/ironsource/mediationsdk/f;)V
+
+    move-object/from16 v4, p5
+
+    move-object/from16 v5, p6
+
+    invoke-direct/range {v3 .. v11}, Lcom/ironsource/mediationsdk/demandOnly/g;-><init>(Ljava/lang/String;Ljava/lang/String;Lcom/ironsource/mediationsdk/model/NetworkSettings;Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;JLcom/ironsource/mediationsdk/AbstractAdapter;Lcom/ironsource/mediationsdk/e;)V
+
+    invoke-virtual {v3, v1}, Lcom/ironsource/mediationsdk/demandOnly/m;->a(Z)V
+
+    iget-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->b:Lj$/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v6}, Lcom/ironsource/mediationsdk/model/NetworkSettings;->getSubProviderId()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v4, v3}, Lj$/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
+
+    :cond_1
+    move-object/from16 v12, p3
+
+    sget-object v0, Lcom/ironsource/mediationsdk/logger/IronLog;->INTERNAL:Lcom/ironsource/mediationsdk/logger/IronLog;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v4, "cannot load "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6}, Lcom/ironsource/mediationsdk/model/NetworkSettings;->getProviderTypeForReflection()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v0, v3}, Lcom/ironsource/mediationsdk/logger/IronLog;->error(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    :cond_2
+    return-void
+.end method
+
+
+# virtual methods
+.method public a()Lj$/util/concurrent/ConcurrentHashMap;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lj$/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/String;",
+            "Lcom/ironsource/mediationsdk/demandOnly/g;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->b:Lj$/util/concurrent/ConcurrentHashMap;
+
+    return-object v0
+.end method
+
+.method public a(Lcom/ironsource/mediationsdk/demandOnly/h$d;)V
+    .locals 4
+
+    .line 2
+    invoke-virtual {p1}, Lcom/ironsource/mediationsdk/demandOnly/h$a;->c()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lcom/ironsource/mediationsdk/demandOnly/h$a;->b()Ljava/lang/String;
+
+    move-result-object p1
+
+    :try_start_0
+    iget-object v1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->b:Lj$/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v1, v0}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/ironsource/mediationsdk/demandOnly/g;
+
+    if-nez v1, :cond_0
+
+    iget-object p1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->a:Lcom/ironsource/ta;
+
+    sget-object v1, Lcom/ironsource/ac;->N1:Lcom/ironsource/ac;
+
+    invoke-interface {p1, v1, v0}, Lcom/ironsource/ta;->a(Lcom/ironsource/ac;Ljava/lang/String;)V
+
+    const-string p1, "Interstitial"
+
+    invoke-static {p1}, Lcom/ironsource/mediationsdk/utils/ErrorBuilder;->buildNonExistentInstanceError(Ljava/lang/String;)Lcom/ironsource/mediationsdk/logger/IronSourceError;
+
+    move-result-object p1
+
+    sget-object v1, Lcom/ironsource/mediationsdk/logger/IronLog;->API:Lcom/ironsource/mediationsdk/logger/IronLog;
+
+    invoke-virtual {p1}, Lcom/ironsource/mediationsdk/logger/IronSourceError;->getErrorMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/ironsource/mediationsdk/logger/IronLog;->error(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->c:Lcom/ironsource/ug;
+
+    invoke-interface {v1, v0}, Lcom/ironsource/ug;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;
+
+    invoke-interface {v1, v0, p1}, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;->onInterstitialAdLoadFailed(Ljava/lang/String;Lcom/ironsource/mediationsdk/logger/IronSourceError;)V
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v1}, Lcom/ironsource/mediationsdk/demandOnly/g;->c()V
+
+    return-void
+
+    :cond_1
+    new-instance v2, Lcom/ironsource/mediationsdk/demandOnly/o$a;
+
+    invoke-static {}, Lcom/ironsource/mb;->b()Lcom/ironsource/mb;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Lcom/ironsource/mb;->c()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v3, p1}, Lcom/ironsource/mediationsdk/utils/IronSourceAES;->decode(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v2, p1}, Lcom/ironsource/mediationsdk/demandOnly/o$a;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v1, v2}, Lcom/ironsource/mediationsdk/demandOnly/g;->a(Lcom/ironsource/mediationsdk/demandOnly/o;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :goto_0
+    invoke-static {}, Lcom/ironsource/q9;->d()Lcom/ironsource/q9;
+
+    move-result-object v1
+
+    invoke-virtual {v1, p1}, Lcom/ironsource/q9;->a(Ljava/lang/Throwable;)V
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v2, "loadInterstitial exception "
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lcom/ironsource/mediationsdk/utils/ErrorBuilder;->buildLoadFailedError(Ljava/lang/String;)Lcom/ironsource/mediationsdk/logger/IronSourceError;
+
+    move-result-object p1
+
+    sget-object v1, Lcom/ironsource/mediationsdk/logger/IronLog;->API:Lcom/ironsource/mediationsdk/logger/IronLog;
+
+    invoke-virtual {p1}, Lcom/ironsource/mediationsdk/logger/IronSourceError;->getErrorMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/ironsource/mediationsdk/logger/IronLog;->error(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->c:Lcom/ironsource/ug;
+
+    invoke-interface {v1, v0}, Lcom/ironsource/ug;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;
+
+    invoke-interface {v1, v0, p1}, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;->onInterstitialAdLoadFailed(Ljava/lang/String;Lcom/ironsource/mediationsdk/logger/IronSourceError;)V
+
+    return-void
+.end method
+
+.method public a(Ljava/lang/String;)V
+    .locals 4
+
+    .line 3
+    const-string v0, "Interstitial"
+
+    :try_start_0
+    iget-object v1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->b:Lj$/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v1, p1}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/ironsource/mediationsdk/demandOnly/g;
+
+    if-nez v1, :cond_0
+
+    iget-object v1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->a:Lcom/ironsource/ta;
+
+    sget-object v2, Lcom/ironsource/ac;->O1:Lcom/ironsource/ac;
+
+    invoke-interface {v1, v2, p1}, Lcom/ironsource/ta;->a(Lcom/ironsource/ac;Ljava/lang/String;)V
+
+    invoke-static {v0}, Lcom/ironsource/mediationsdk/utils/ErrorBuilder;->buildNonExistentInstanceError(Ljava/lang/String;)Lcom/ironsource/mediationsdk/logger/IronSourceError;
+
+    move-result-object v1
+
+    sget-object v2, Lcom/ironsource/mediationsdk/logger/IronLog;->API:Lcom/ironsource/mediationsdk/logger/IronLog;
+
+    invoke-virtual {v1}, Lcom/ironsource/mediationsdk/logger/IronSourceError;->getErrorMessage()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lcom/ironsource/mediationsdk/logger/IronLog;->error(Ljava/lang/String;)V
+
+    iget-object v2, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->c:Lcom/ironsource/ug;
+
+    invoke-interface {v2, p1}, Lcom/ironsource/ug;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;
+
+    invoke-interface {v2, p1, v1}, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;->onInterstitialAdShowFailed(Ljava/lang/String;Lcom/ironsource/mediationsdk/logger/IronSourceError;)V
+
+    return-void
+
+    :catch_0
+    move-exception v1
+
+    goto :goto_0
+
+    :cond_0
+    invoke-virtual {v1}, Lcom/ironsource/mediationsdk/demandOnly/g;->b()V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :goto_0
+    invoke-static {}, Lcom/ironsource/q9;->d()Lcom/ironsource/q9;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v1}, Lcom/ironsource/q9;->a(Ljava/lang/Throwable;)V
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v3, "showInterstitial exception "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lcom/ironsource/mediationsdk/utils/ErrorBuilder;->buildShowFailedError(Ljava/lang/String;Ljava/lang/String;)Lcom/ironsource/mediationsdk/logger/IronSourceError;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/ironsource/mediationsdk/logger/IronLog;->API:Lcom/ironsource/mediationsdk/logger/IronLog;
+
+    invoke-virtual {v0}, Lcom/ironsource/mediationsdk/logger/IronSourceError;->getErrorMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/ironsource/mediationsdk/logger/IronLog;->error(Ljava/lang/String;)V
+
+    iget-object v1, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->c:Lcom/ironsource/ug;
+
+    invoke-interface {v1, p1}, Lcom/ironsource/ug;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;
+
+    invoke-interface {v1, p1, v0}, Lcom/ironsource/mediationsdk/demandOnly/ISDemandOnlyInterstitialListener;->onInterstitialAdShowFailed(Ljava/lang/String;Lcom/ironsource/mediationsdk/logger/IronSourceError;)V
+
+    return-void
+.end method
+
+.method public b(Ljava/lang/String;)Z
+    .locals 2
+
+    iget-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->b:Lj$/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {v0, p1}, Lj$/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/ironsource/mediationsdk/demandOnly/g;
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lcom/ironsource/mediationsdk/demandOnly/f;->a:Lcom/ironsource/ta;
+
+    sget-object v1, Lcom/ironsource/ac;->M1:Lcom/ironsource/ac;
+
+    invoke-interface {v0, v1, p1}, Lcom/ironsource/ta;->a(Lcom/ironsource/ac;Ljava/lang/String;)V
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    invoke-virtual {v0}, Lcom/ironsource/mediationsdk/demandOnly/g;->a()Z
+
+    move-result p1
+
+    return p1
+.end method

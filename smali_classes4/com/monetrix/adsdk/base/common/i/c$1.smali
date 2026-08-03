@@ -1,0 +1,49 @@
+.class final Lcom/monetrix/adsdk/base/common/i/c$1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Thread$UncaughtExceptionHandler;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/monetrix/adsdk/base/common/i/c;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic a:Lcom/monetrix/adsdk/base/common/i/c;
+
+
+# direct methods
+.method constructor <init>(Lcom/monetrix/adsdk/base/common/i/c;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/monetrix/adsdk/base/common/i/c$1;->a:Lcom/monetrix/adsdk/base/common/i/c;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    .locals 0
+
+    invoke-static {}, Lcom/monetrix/adsdk/base/common/i/c;->a()Lcom/monetrix/adsdk/base/common/i/a;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    invoke-static {}, Lcom/monetrix/adsdk/base/common/i/c;->a()Lcom/monetrix/adsdk/base/common/i/a;
+
+    :cond_0
+    return-void
+.end method
