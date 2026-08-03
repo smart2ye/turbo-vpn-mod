@@ -24,21 +24,42 @@ jobs:
           sudo apt update
           sudo apt install -y apktool
 
-      - name: Clean problematic resource files
+      - name: Clean all problematic resource files
         run: |
-          # 1. حذف كل ملفات $ من مجلدات drawable
+          # 1. حذف جميع ملفات $ من أي مجلد
           find res/ -type f -name "*\$*.xml" -delete
 
           # 2. حذف ids.xml (يحتوي على علامات <id> غير مسموحة)
           rm -f res/values/ids.xml
 
-          # 3. حذف تعارض ic_launcher (نسخة الـ XML تتعارض مع PNG)
-          rm -f res/mipmap-anydpi-v26/ic_launcher.xml
-
-          # 4. حذف public.xml (إن وجد)
+          # 3. حذف public.xml (إن وجد)
           rm -f res/values/public.xml
 
-          echo "✅ تم تنظيف الموارد المزعجة"
+          # 4. حذف تعارض ic_launcher (XML يتعارض مع PNG)
+          rm -f res/mipmap-anydpi-v26/ic_launcher.xml
+
+          # 5. حذف جميع ملفات add_dns_* و always_on_* (مرتبطة بإعدادات DNS)
+          find res/drawable -type f -name "add_dns_*.xml" -delete 2>/dev/null || true
+          find res/drawable -type f -name "always_on_step*.xml" -delete 2>/dev/null || true
+
+          # 6. حذف جميع ملفات zs_* و zui_* (مرتبطة بـ Zendesk والدعم الفني)
+          find res/layout -type f -name "zs_*.xml" -delete 2>/dev/null || true
+          find res/layout -type f -name "zui_*.xml" -delete 2>/dev/null || true
+          find res/drawable -type f -name "zs_*.xml" -delete 2>/dev/null || true
+          find res/drawable -type f -name "zui_*.xml" -delete 2>/dev/null || true
+          find res/menu -type f -name "zs_*.xml" -delete 2>/dev/null || true
+          find res/menu -type f -name "zui_*.xml" -delete 2>/dev/null || true
+
+          # 7. حذف ملفات avd_* (رسوم متحركة لكلمات المرور - غير ضرورية)
+          find res/drawable -type f -name "avd_*.xml" -delete 2>/dev/null || true
+
+          # 8. حذف ملفات design_password_eye (مرتبطة بإظهار كلمة المرور)
+          rm -f res/drawable/design_password_eye.xml 2>/dev/null || true
+
+          # 9. حذف ملفات abc_btn_* (قد تسبب تعارضات)
+          find res/drawable -type f -name "abc_btn_*.xml" -delete 2>/dev/null || true
+
+          echo "✅ تم تنظيف جميع الموارد المسببة للمشاكل"
 
       - name: Build APK
         run: |
